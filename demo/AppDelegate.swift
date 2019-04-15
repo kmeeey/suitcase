@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("didFinishLaunchingWithOptions");
         self.window = UIWindow.init(frame: UIScreen.main.bounds);
         self.window?.makeKeyAndVisible();
-        self.window?.rootViewController = CusTabbarViewController.init();
+        self.window?.rootViewController = Setstroke.init();
         return true
     }
 
