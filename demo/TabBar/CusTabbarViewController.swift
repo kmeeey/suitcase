@@ -21,13 +21,20 @@ class CusTabbarViewController: UITabBarController {
    
     func initViewControllers() -> Void {
         let index = ToolBoxPage();
-        self.setViewControllerItem(vc: index, title: "首页", imgNor: UIImage.init(named: "btn_index_normal")!, imgSel: UIImage.init(named: "btn_index_selected")!)
+        self.setViewControllerItem(vc: index, title: "工具箱", imgNor: UIImage.init(named: "btn_index_normal")!, imgSel: UIImage.init(named: "btn_index_selected")!)
         
-        let myVC = MyViewController();
-        self.setViewControllerItem(vc: myVC, title: "我的", imgNor: UIImage.init(named: "btn_me_normal")!, imgSel: UIImage.init(named: "btn_me_selected")! )
+        let assistant = Assistant();
+        self.setViewControllerItem(vc: assistant, title: "行程助手", imgNor: UIImage.init(named: "btn_me_normal")!, imgSel: UIImage.init(named: "btn_me_selected")! )
         
-        let third = Assistant();
-        self.setViewControllerItem(vc: third, title: "行程助手", imgNor: UIImage.init(named: "btn_me_normal")!, imgSel: UIImage.init(named: "btn_me_selected")! )
+        
+        
+        let myTrip = MyTrip();
+        self.setViewControllerItem(vc: myTrip, title: "游记", imgNor: UIImage.init(named: "btn_me_normal")!, imgSel: UIImage.init(named: "btn_me_selected")! )
+        
+        let my = MyViewController();
+        self.setViewControllerItem(vc: my, title: "我的", imgNor: UIImage.init(named: "btn_me_normal")!, imgSel: UIImage.init(named: "btn_me_selected")! )
+        
+        
         
         self.viewControllers = self.aryViewControllers;
     }

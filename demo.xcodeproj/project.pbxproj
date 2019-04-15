@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12DEE00922642845006279BF /* Third.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE00822642845006279BF /* Third.swift */; };
+		12DEE00922642845006279BF /* MyTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE00822642845006279BF /* MyTrip.swift */; };
 		12DEE01222642DC2006279BF /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01122642DC2006279BF /* Assistant.swift */; };
 		12DEE01422642E19006279BF /* viewController02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01322642E18006279BF /* viewController02.swift */; };
 		92104A25224DE7220042FD2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92104A24224DE7220042FD2A /* AppDelegate.swift */; };
 		92104A27224DE7220042FD2A /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92104A26224DE7220042FD2A /* MyViewController.swift */; };
 		92104A2C224DE7230042FD2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92104A2B224DE7230042FD2A /* Assets.xcassets */; };
 		92104A2F224DE7230042FD2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92104A2D224DE7230042FD2A /* LaunchScreen.storyboard */; };
-		92104A37224DEB120042FD2A /* audi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92104A36224DEB120042FD2A /* audi.jpg */; };
 		92104A3B22545BE70042FD2A /* CusTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92104A3A22545BE70042FD2A /* CusTabbarViewController.swift */; };
 		92104A3D22545C010042FD2A /* ToolBoxPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92104A3C22545C010042FD2A /* ToolBoxPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		12DEE00822642845006279BF /* Third.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Third.swift; sourceTree = "<group>"; };
+		12DEE00822642845006279BF /* MyTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTrip.swift; sourceTree = "<group>"; };
 		12DEE01122642DC2006279BF /* Assistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assistant.swift; sourceTree = "<group>"; };
 		12DEE01322642E18006279BF /* viewController02.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewController02.swift; sourceTree = "<group>"; };
 		92104A21224DE7220042FD2A /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,7 +28,6 @@
 		92104A2B224DE7230042FD2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92104A2E224DE7230042FD2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92104A30224DE7230042FD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92104A36224DEB120042FD2A /* audi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = audi.jpg; sourceTree = "<group>"; };
 		92104A3A22545BE70042FD2A /* CusTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusTabbarViewController.swift; sourceTree = "<group>"; };
 		92104A3C22545C010042FD2A /* ToolBoxPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBoxPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,7 +71,7 @@
 		12DEE00D22642CA1006279BF /* Travel */ = {
 			isa = PBXGroup;
 			children = (
-				12DEE00822642845006279BF /* Third.swift */,
+				12DEE00822642845006279BF /* MyTrip.swift */,
 			);
 			path = Travel;
 			sourceTree = "<group>";
@@ -120,14 +118,13 @@
 		92104A23224DE7220042FD2A /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				12DEE00B22642BF4006279BF /* ToolBox */,
+				12DEE00C22642C74006279BF /* Assistant */,
+				12DEE00D22642CA1006279BF /* Travel */,
+				12DEE00E22642CB7006279BF /* My */,
 				12DEE01022642D03006279BF /* Net */,
 				12DEE00F22642CCD006279BF /* Util */,
-				12DEE00E22642CB7006279BF /* My */,
-				12DEE00D22642CA1006279BF /* Travel */,
-				12DEE00C22642C74006279BF /* Assistant */,
-				12DEE00B22642BF4006279BF /* ToolBox */,
 				12DEE00A22642BCD006279BF /* TabBar */,
-				92104A36224DEB120042FD2A /* audi.jpg */,
 				92104A24224DE7220042FD2A /* AppDelegate.swift */,
 				92104A2B224DE7230042FD2A /* Assets.xcassets */,
 				92104A2D224DE7230042FD2A /* LaunchScreen.storyboard */,
@@ -197,7 +194,6 @@
 			files = (
 				92104A2F224DE7230042FD2A /* LaunchScreen.storyboard in Resources */,
 				92104A2C224DE7230042FD2A /* Assets.xcassets in Resources */,
-				92104A37224DEB120042FD2A /* audi.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +206,7 @@
 			files = (
 				12DEE01422642E19006279BF /* viewController02.swift in Sources */,
 				12DEE01222642DC2006279BF /* Assistant.swift in Sources */,
-				12DEE00922642845006279BF /* Third.swift in Sources */,
+				12DEE00922642845006279BF /* MyTrip.swift in Sources */,
 				92104A27224DE7220042FD2A /* MyViewController.swift in Sources */,
 				92104A25224DE7220042FD2A /* AppDelegate.swift in Sources */,
 				92104A3B22545BE70042FD2A /* CusTabbarViewController.swift in Sources */,
