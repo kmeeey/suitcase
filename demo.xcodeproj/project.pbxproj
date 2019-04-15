@@ -13,6 +13,8 @@
 		12DEE01622644714006279BF /* TToolBoxPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01522644714006279BF /* TToolBoxPage.swift */; };
 		12DEE0182264471D006279BF /* MyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE0172264471D006279BF /* MyCollectionView.swift */; };
 		7C21EB7322644ED500BD46C4 /* Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21EB7222644ED500BD46C4 /* Translate.swift */; };
+		7C21EB77226455C600BD46C4 /* FirstWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21EB76226455C600BD46C4 /* FirstWeather.swift */; };
+		7C21EB792264561A00BD46C4 /* Setstroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21EB782264561A00BD46C4 /* Setstroke.swift */; };
 		92104A25224DE7220042FD2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92104A24224DE7220042FD2A /* AppDelegate.swift */; };
 		92104A27224DE7220042FD2A /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92104A26224DE7220042FD2A /* MyViewController.swift */; };
 		92104A2C224DE7230042FD2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92104A2B224DE7230042FD2A /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 		12DEE01522644714006279BF /* TToolBoxPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TToolBoxPage.swift; sourceTree = "<group>"; };
 		12DEE0172264471D006279BF /* MyCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionView.swift; sourceTree = "<group>"; };
 		7C21EB7222644ED500BD46C4 /* Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translate.swift; sourceTree = "<group>"; };
+		7C21EB76226455C600BD46C4 /* FirstWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWeather.swift; sourceTree = "<group>"; };
+		7C21EB782264561A00BD46C4 /* Setstroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setstroke.swift; sourceTree = "<group>"; };
 		92104A21224DE7220042FD2A /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92104A24224DE7220042FD2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92104A26224DE7220042FD2A /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
@@ -58,9 +62,10 @@
 		12DEE00B22642BF4006279BF /* ToolBox */ = {
 			isa = PBXGroup;
 			children = (
+				7C21EB752264539A00BD46C4 /* Stroke weather */,
+				7C21EB742264534700BD46C4 /* Real-time translation */,
 				12DEE0172264471D006279BF /* MyCollectionView.swift */,
 				12DEE01522644714006279BF /* TToolBoxPage.swift */,
-				7C21EB7222644ED500BD46C4 /* Translate.swift */,
 			);
 			path = ToolBox;
 			sourceTree = "<group>";
@@ -102,6 +107,23 @@
 			children = (
 			);
 			path = Net;
+			sourceTree = "<group>";
+		};
+		7C21EB742264534700BD46C4 /* Real-time translation */ = {
+			isa = PBXGroup;
+			children = (
+				7C21EB7222644ED500BD46C4 /* Translate.swift */,
+			);
+			path = "Real-time translation";
+			sourceTree = "<group>";
+		};
+		7C21EB752264539A00BD46C4 /* Stroke weather */ = {
+			isa = PBXGroup;
+			children = (
+				7C21EB76226455C600BD46C4 /* FirstWeather.swift */,
+				7C21EB782264561A00BD46C4 /* Setstroke.swift */,
+			);
+			path = "Stroke weather";
 			sourceTree = "<group>";
 		};
 		92104A18224DE7220042FD2A = {
@@ -213,10 +235,12 @@
 				12DEE01422642E19006279BF /* viewController02.swift in Sources */,
 				12DEE01222642DC2006279BF /* Assistant.swift in Sources */,
 				12DEE00922642845006279BF /* MyTrip.swift in Sources */,
+				7C21EB792264561A00BD46C4 /* Setstroke.swift in Sources */,
 				92104A27224DE7220042FD2A /* MyViewController.swift in Sources */,
 				12DEE01622644714006279BF /* TToolBoxPage.swift in Sources */,
 				7C21EB7322644ED500BD46C4 /* Translate.swift in Sources */,
 				92104A25224DE7220042FD2A /* AppDelegate.swift in Sources */,
+				7C21EB77226455C600BD46C4 /* FirstWeather.swift in Sources */,
 				12DEE0182264471D006279BF /* MyCollectionView.swift in Sources */,
 				92104A3B22545BE70042FD2A /* CusTabbarViewController.swift in Sources */,
 			);
