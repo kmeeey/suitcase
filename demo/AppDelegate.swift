@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("didFinishLaunchingWithOptions");
         self.window = UIWindow.init(frame: UIScreen.main.bounds);
         self.window?.makeKeyAndVisible();
-        self.window?.rootViewController = Setstroke.init();
+        self.window?.rootViewController = Mine.init();
         return true
     }
 
