@@ -20,7 +20,7 @@ class CusTabbarViewController: UITabBarController {
     }
    
     func initViewControllers() -> Void {
-        let index = ToolBoxPage();
+        let index = TToolBoxPage();
         self.setViewControllerItem(vc: index, title: "工具箱", imgNor: UIImage.init(named: "btn_index_normal")!, imgSel: UIImage.init(named: "btn_index_selected")!)
         
         let assistant = Assistant();

@@ -13,6 +13,8 @@ class MyTrip: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor.white;
+        
     }
     
     override func loadView() {
@@ -20,6 +22,5 @@ class MyTrip: UIViewController {
         self.navigationItem.title = "游记";
         
     }
-    
     
 }

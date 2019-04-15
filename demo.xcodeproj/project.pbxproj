@@ -10,18 +10,21 @@
 		12DEE00922642845006279BF /* MyTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE00822642845006279BF /* MyTrip.swift */; };
 		12DEE01222642DC2006279BF /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01122642DC2006279BF /* Assistant.swift */; };
 		12DEE01422642E19006279BF /* viewController02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01322642E18006279BF /* viewController02.swift */; };
+		12DEE01622644714006279BF /* TToolBoxPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01522644714006279BF /* TToolBoxPage.swift */; };
+		12DEE0182264471D006279BF /* MyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE0172264471D006279BF /* MyCollectionView.swift */; };
 		92104A25224DE7220042FD2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92104A24224DE7220042FD2A /* AppDelegate.swift */; };
 		92104A27224DE7220042FD2A /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92104A26224DE7220042FD2A /* MyViewController.swift */; };
 		92104A2C224DE7230042FD2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92104A2B224DE7230042FD2A /* Assets.xcassets */; };
 		92104A2F224DE7230042FD2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92104A2D224DE7230042FD2A /* LaunchScreen.storyboard */; };
 		92104A3B22545BE70042FD2A /* CusTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92104A3A22545BE70042FD2A /* CusTabbarViewController.swift */; };
-		92104A3D22545C010042FD2A /* ToolBoxPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92104A3C22545C010042FD2A /* ToolBoxPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12DEE00822642845006279BF /* MyTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTrip.swift; sourceTree = "<group>"; };
 		12DEE01122642DC2006279BF /* Assistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assistant.swift; sourceTree = "<group>"; };
 		12DEE01322642E18006279BF /* viewController02.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewController02.swift; sourceTree = "<group>"; };
+		12DEE01522644714006279BF /* TToolBoxPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TToolBoxPage.swift; sourceTree = "<group>"; };
+		12DEE0172264471D006279BF /* MyCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionView.swift; sourceTree = "<group>"; };
 		92104A21224DE7220042FD2A /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92104A24224DE7220042FD2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92104A26224DE7220042FD2A /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +32,6 @@
 		92104A2E224DE7230042FD2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92104A30224DE7230042FD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92104A3A22545BE70042FD2A /* CusTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusTabbarViewController.swift; sourceTree = "<group>"; };
-		92104A3C22545C010042FD2A /* ToolBoxPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBoxPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,8 @@
 		12DEE00B22642BF4006279BF /* ToolBox */ = {
 			isa = PBXGroup;
 			children = (
-				92104A3C22545C010042FD2A /* ToolBoxPage.swift */,
+				12DEE0172264471D006279BF /* MyCollectionView.swift */,
+				12DEE01522644714006279BF /* TToolBoxPage.swift */,
 			);
 			path = ToolBox;
 			sourceTree = "<group>";
@@ -208,9 +211,10 @@
 				12DEE01222642DC2006279BF /* Assistant.swift in Sources */,
 				12DEE00922642845006279BF /* MyTrip.swift in Sources */,
 				92104A27224DE7220042FD2A /* MyViewController.swift in Sources */,
+				12DEE01622644714006279BF /* TToolBoxPage.swift in Sources */,
 				92104A25224DE7220042FD2A /* AppDelegate.swift in Sources */,
+				12DEE0182264471D006279BF /* MyCollectionView.swift in Sources */,
 				92104A3B22545BE70042FD2A /* CusTabbarViewController.swift in Sources */,
-				92104A3D22545C010042FD2A /* ToolBoxPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
