@@ -63,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				7C21EB752264539A00BD46C4 /* Stroke weather */,
-				7C21EB742264534700BD46C4 /* Real-time translation */,
+				7C21EB742264534700BD46C4 /* Real_time translation */,
 				12DEE0172264471D006279BF /* MyCollectionView.swift */,
 				12DEE01522644714006279BF /* TToolBoxPage.swift */,
 			);
@@ -109,12 +109,12 @@
 			path = Net;
 			sourceTree = "<group>";
 		};
-		7C21EB742264534700BD46C4 /* Real-time translation */ = {
+		7C21EB742264534700BD46C4 /* Real_time translation */ = {
 			isa = PBXGroup;
 			children = (
 				7C21EB7222644ED500BD46C4 /* Translate.swift */,
 			);
-			path = "Real-time translation";
+			path = "Real_time translation";
 			sourceTree = "<group>";
 		};
 		7C21EB752264539A00BD46C4 /* Stroke weather */ = {

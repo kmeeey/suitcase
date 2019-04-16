@@ -50,12 +50,32 @@ class TToolBoxPage: UIViewController ,UICollectionViewDataSource,UICollectionVie
         
         
         cell.backgroundColor = .red
-        cell.layer.borderWidth = 0.1
+        cell.layer.borderWidth = 1
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         print("index is \(indexPath.row)");
+        var index  = indexPath.row
+        switch index {
+        case 0 :
+            let viewController1 = FirstWeather()
+            //将第二个视图控制器压入导航视图控制器，实现页面跳转
+            self.navigationController?.pushViewController(viewController1,animated: true)
+            
+            break
+
+            
+        case 1 :
+            let viewController1 = Translate()
+            
+            self.navigationController?.pushViewController(viewController1,animated: true)
+            break
+        case 2 : break
+            
+        default: break
+            
+        }
         
     }
     
