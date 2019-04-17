@@ -25,7 +25,7 @@ class Translate: UIViewController {
         leftItemButton.setBackgroundImage(UIImage(named: "Image"), for: .normal)
         leftItemButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         self.view.addSubview(leftItemButton)
-        leftItemButton.addTarget(self, action: #selector(action(bt1:)), for: UIControl.Event.touchUpOutside)
+        leftItemButton.addTarget(self, action: #selector(back(_ :)), for: UIControl.Event.touchUpOutside)
         
         let lb1 = UILabel.init(frame: CGRect.init(x: 140, y: 20+44, width: 100, height: 40))
         lb1.text = "实时翻译"
@@ -95,8 +95,9 @@ class Translate: UIViewController {
         //
     }
     
-    @objc func action(bt1:UIButton){
+    @objc func back(_ sender: AnyObject){
         print("点击了这个按钮")
+        dismiss(animated: true, completion: nil)
     }
     
 }

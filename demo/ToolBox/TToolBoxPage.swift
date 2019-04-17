@@ -12,26 +12,34 @@ class TToolBoxPage: UIViewController ,UICollectionViewDataSource,UICollectionVie
     
     var myCollectionView :UICollectionView!
     var cell:UICollectionViewCell!
-    var imageView :UIImageView?
+    var imageViewbg :UIImageView?
+    var imageViewmain :UIImageView?
+    
     
     let ScreenHeight = UIScreen.main.bounds.size.height
     let ScreenWidth = UIScreen.main.bounds.size.width
     let cid = "cid"
     override func viewDidLoad() {
         
-        self.navigationItem.title = "工具箱"
+        self.navigationController?.navigationBar.isHidden = true
         
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         
         //imageview
-        imageView = UIImageView(image: UIImage(named: "image1"))
-        imageView!.frame = CGRect(x: 0, y: 0, width:ScreenWidth, height:ScreenHeight/3 )
-        self.view.addSubview(imageView!)
+        imageViewbg = UIImageView(image: UIImage(named: "main_page_top_day_bg"))
+        imageViewbg!.frame = CGRect(x: 0, y: 0, width:ScreenWidth, height:ScreenHeight/2 )
+        self.view.addSubview(imageViewbg!)
         
+        imageViewmain = UIImageView(image: UIImage(named: "main_page_top_set"))
+        imageViewmain!.frame = CGRect(x: 0, y: 0, width:ScreenWidth, height:ScreenHeight/2 )
+        imageViewmain?.contentMode = UIImageView.ContentMode.scaleAspectFit
+        
+        self.view.addSubview(imageViewmain!)
+  
         
         let layout:UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        self.myCollectionView = UICollectionView(frame: CGRect.init(x: 0, y: ScreenHeight/3, width: ScreenWidth, height: ScreenHeight-ScreenHeight/3-84), collectionViewLayout: layout)
+        self.myCollectionView = UICollectionView(frame: CGRect.init(x: 0, y: ScreenHeight/2, width: ScreenWidth, height: ScreenHeight-ScreenHeight/2-84), collectionViewLayout: layout)
         layout.itemSize = CGSize(width: (ScreenWidth-30)/3, height: ScreenWidth/3)
         
         self.myCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cid)
@@ -56,20 +64,16 @@ class TToolBoxPage: UIViewController ,UICollectionViewDataSource,UICollectionVie
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         print("index is \(indexPath.row)");
-        var index  = indexPath.row
+        let index = indexPath.row
         switch index {
         case 0 :
-            let viewController1 = FirstWeather()
-            //将第二个视图控制器压入导航视图控制器，实现页面跳转
-            self.navigationController?.pushViewController(viewController1,animated: true)
-            
+            let firstWeather = FirstWeather()
+            self.present(firstWeather, animated: true, completion: nil)
             break
-
-            
+    
         case 1 :
-            let viewController1 = Translate()
-            
-            self.navigationController?.pushViewController(viewController1,animated: true)
+            let translate = Translate()
+            self.present(translate, animated: true, completion: nil)
             break
         case 2 : break
             

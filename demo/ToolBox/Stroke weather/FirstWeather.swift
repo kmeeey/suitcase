@@ -16,8 +16,8 @@ class FirstWeather: UIViewController {
         let screen = UIScreen.main.bounds
         self.view.backgroundColor = #colorLiteral(red: 0.9068111181, green: 0.9017875791, blue: 0.906077683, alpha: 1)
         
-        let navigationBarHeight:CGFloat = 44
-        let navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 20+10, width: screen.size.width, height: navigationBarHeight))
+        let navigationBarHeight:CGFloat = 30
+        let navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 28, width: screen.size.width, height: navigationBarHeight))
         navigationBar.backgroundColor = UIColor.white
         
         let backButtonItem = UIBarButtonItem(title:"返回",style: .plain, target: self, action: #selector(back(_ :)))
@@ -50,15 +50,18 @@ class FirstWeather: UIViewController {
         let view2 = UIView.init(frame: CGRect.init(x: 0, y: 0, width: screen.size.width
             , height:navigationBarHeight))
         view2.backgroundColor = UIColor.white
+        
         self.view.addSubview(view2)
     }
     
     @objc func back(_ sender: AnyObject){
-        print("返回上一界面")
+        
+        dismiss(animated: true, completion: nil)
+        
     }
     
     @objc func save(_ sender: AnyObject){
-        print("返回上一界面")
+        dismiss(animated: true, completion: nil)
     }
     
     @objc func setweather(_ sender: AnyObject){
