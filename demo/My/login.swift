@@ -7,19 +7,19 @@
 //
 import UIKit
 
-class login: UIViewController {
+class Login: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.view.backgroundColor =  colorLiteral(red: 0.9591775537, green: 0.9593380094, blue: 0.9591564536, alpha: 1)
+        //        self.view.backgroundColor =  #colorLiteral(red: 0.9591775537, green: 0.9593380094, blue: 0.9591564536, alpha: 1)
         let screen = UIScreen.main.bounds
         
         //1. 创建NavigationBar
         let navigationBarHeight: CGFloat = 44//默认高度
         let navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 30 , width: screen.size.width, height: navigationBarHeight))
-        let leftbtn = UIBarButtonItem(title:"返回",style:.plain,target: self,action: #selector(login.save(_:)))
-        let rightbtn = UIBarButtonItem(title:"登录",style:.plain,target: self,action: #selector(login.add(_:)))
+        let leftbtn = UIBarButtonItem(title:"返回",style:.plain,target: self,action: #selector(back(_:)))
+        let rightbtn = UIBarButtonItem(title:"登录",style:.plain,target: self,action: #selector(add(_:)))
         
         leftbtn.tintColor = UIColor.orange
         let navigationItem = UINavigationItem(title:"会员登陆")
@@ -63,7 +63,7 @@ class login: UIViewController {
         btnForget.setTitle("忘记密码", for: UIControl.State.normal)
         btnForget.backgroundColor = self.view.backgroundColor
         btnForget.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        btnForget.setTitleColor( colorLiteral(red: 0.4756349325, green: 0.4756467342, blue: 0.4756404161, alpha: 1), for: UIControl.State.normal)
+        //        btnForget.setTitleColor( #colorLiteral(red: 0.4756349325, green: 0.4756467342, blue: 0.4756404161, alpha: 1), for: UIControl.State.normal)
         btnForget.addTarget(self, action: #selector(ForgetPassWord), for: UIControl.Event.touchUpInside)
         self.view.addSubview(btnForget)
         
@@ -72,12 +72,12 @@ class login: UIViewController {
         btnReg.setTitle("注册新会员", for: UIControl.State.normal)
         btnReg.backgroundColor = self.view.backgroundColor
         btnReg.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        btnReg.setTitleColor( colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1), for: UIControl.State.normal)
+        //        btnReg.setTitleColor(#colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1), for: UIControl.State.normal)
         btnReg.addTarget(self, action: #selector(Register), for: UIControl.Event.touchUpInside)
         self.view.addSubview(btnReg)
         //分割线
         let cutline = UIView(frame: CGRect(x: 45, y: username.frame.origin.y + username.frame.size.height, width:self.view.bounds.width, height: 1))
-        cutline.backgroundColor =  colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
+        //        cutline.backgroundColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
         self.view.addSubview(cutline)
         //提示社交平台登录
         let tipLine = UILabel(frame: CGRect(x:(self.view.frame.width - 40 - 300)/2 + 20, y: self.view.frame.height - btnForget.frame.origin.y - btnForget.frame.height + 200 , width: 300, height: 50))
@@ -111,6 +111,14 @@ class login: UIViewController {
     }
     @objc func Register(){
         print("这个我也没写")
+    }
+    @objc func back(_ sender: AnyObject){
+        let mineConteller = Mine()
+        self.present(mineConteller, animated: true)
+    }
+    
+    @objc func add(_ sender: AnyObject){
+        
     }
     
 }
