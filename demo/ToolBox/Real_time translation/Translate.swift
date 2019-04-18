@@ -17,30 +17,42 @@ class Translate: UIViewController {
         //设置导航栏整体背景颜色
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.backgroundColor = UIColor.white
+        //1. 创建NavigationBar
+        let navigationBarHeight: CGFloat = 44//默认高度
+        let screen = UIScreen.main.bounds
+        let navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 30 , width: screen.size.width, height: navigationBarHeight))
+        let leftbtn = UIBarButtonItem(title:"返回",style:.plain,target: self,action: #selector(back(_:)))
+        let rightbtn = UIBarButtonItem(title:"全屏模式",style:.plain,target: self,action: #selector(add(_:)))
         
-        let leftItemButton = UIButton.init(frame: CGRect.init(x:20,y:20+44,width:
-            60,height: 40))
-        leftItemButton.setTitle("返回", for: .normal)
-        leftItemButton.setTitleColor(#colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1), for: .normal)
-        leftItemButton.setBackgroundImage(UIImage(named: "Image"), for: .normal)
-        leftItemButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        self.view.addSubview(leftItemButton)
-        leftItemButton.addTarget(self, action: #selector(back(_ :)), for: UIControl.Event.touchUpOutside)
+        leftbtn.tintColor = UIColor.orange
+        let navigationItem = UINavigationItem(title:"实时翻译")
+        navigationItem.leftBarButtonItem = leftbtn
+        navigationItem.rightBarButtonItem = rightbtn
+        navigationBar.items = [navigationItem]
+        self.view.addSubview(navigationBar)
+//        let leftItemButton = UIButton.init(frame: CGRect.init(x:20,y:20+44,width:
+//            60,height: 40))
+//        leftItemButton.setTitle("返回", for: .normal)
+//        leftItemButton.setTitleColor(#colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1), for: .normal)
+//        leftItemButton.setBackgroundImage(UIImage(named: "Image"), for: .normal)
+//        leftItemButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+//        self.view.addSubview(leftItemButton)
+//        leftItemButton.addTarget(self, action: #selector(backLast(_ :)), for: UIControl.Event.touchUpOutside)
+//
+//        let lb1 = UILabel.init(frame: CGRect.init(x: 140, y: 20+44, width: 100, height: 40))
+//        lb1.text = "实时翻译"
+//        lb1.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+//        lb1.font = UIFont.boldSystemFont(ofSize: 20)
+//        lb1.textAlignment = .center
+//        self.view.addSubview(lb1)
+//
+//        let rightItemButton = UIButton.init(frame: CGRect.init(x: 280, y: 20+44, width: 100, height: 40))
+//        rightItemButton.setTitle("全屏模式", for: .normal)
+//        rightItemButton.setTitleColor(#colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1), for: .normal)
+//        rightItemButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+//        self.view.addSubview(rightItemButton)
         
-        let lb1 = UILabel.init(frame: CGRect.init(x: 140, y: 20+44, width: 100, height: 40))
-        lb1.text = "实时翻译"
-        lb1.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-        lb1.font = UIFont.boldSystemFont(ofSize: 20)
-        lb1.textAlignment = .center
-        self.view.addSubview(lb1)
-        
-        let rightItemButton = UIButton.init(frame: CGRect.init(x: 280, y: 20+44, width: 100, height: 40))
-        rightItemButton.setTitle("全屏模式", for: .normal)
-        rightItemButton.setTitleColor(#colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1), for: .normal)
-        rightItemButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        self.view.addSubview(rightItemButton)
-        
-        let chineseButton = UIButton.init(frame: CGRect.init(x: 0, y: 20+44+45, width: 150, height: 40))
+        let chineseButton = UIButton.init(frame: CGRect.init(x: 0, y: navigationBar.frame.origin.y + navigationBar.frame.height, width: 150, height: 40))
         chineseButton.setTitle("简体中文", for: .normal)
         chineseButton.setTitleColor(UIColor.black, for: .normal)
         chineseButton.layer.borderWidth = 1
@@ -48,13 +60,13 @@ class Translate: UIViewController {
         chineseButton.titleLabel?.textAlignment = .center
         self.view.addSubview(chineseButton)
         
-        let bt3 = UIButton.init(frame: CGRect.init(x: 150, y: 20+44+45, width: 80, height: 40))
+        let bt3 = UIButton.init(frame: CGRect.init(x: 150, y: navigationBar.frame.origin.y + navigationBar.frame.height, width: 80, height: 40))
         bt3.setImage(UIImage(named: "transformation"), for: .normal)
         bt3.layer.borderWidth = 1
         bt3.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         self.view.addSubview(bt3)
         
-        let englishButton = UIButton.init(frame: CGRect.init(x: 230, y: 20+44+45, width: 160, height: 40))
+        let englishButton = UIButton.init(frame: CGRect.init(x: 230, y: navigationBar.frame.origin.y + navigationBar.frame.height, width: 160, height: 40))
         englishButton.setTitle("英语", for: .normal)
         englishButton.setTitleColor(UIColor.black, for: .normal)
         englishButton.layer.borderWidth = 1
@@ -97,7 +109,12 @@ class Translate: UIViewController {
     
     @objc func back(_ sender: AnyObject){
         print("点击了这个按钮")
-        dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
+    @objc func add(_ sender: AnyObject){
+        print("点击了这个按钮")
+        self.dismiss(animated: true, completion: nil)
+    }
+
 }
