@@ -11,6 +11,9 @@
 		12DEE01222642DC2006279BF /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01122642DC2006279BF /* Assistant.swift */; };
 		12DEE01422642E19006279BF /* viewController02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01322642E18006279BF /* viewController02.swift */; };
 		12DEE01622644714006279BF /* TToolBoxPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01522644714006279BF /* TToolBoxPage.swift */; };
+		12DEE0182264471D006279BF /* MyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE0172264471D006279BF /* MyCollectionView.swift */; };
+		171F9D3222648E530064C5DF /* Mine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F9D3122648E520064C5DF /* Mine.swift */; };
+		171F9D3422648E740064C5DF /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F9D3322648E740064C5DF /* login.swift */; };
 		7C21EB7322644ED500BD46C4 /* Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21EB7222644ED500BD46C4 /* Translate.swift */; };
 		7C21EB77226455C600BD46C4 /* FirstWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21EB76226455C600BD46C4 /* FirstWeather.swift */; };
 		7C21EB792264561A00BD46C4 /* Setstroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21EB782264561A00BD46C4 /* Setstroke.swift */; };
@@ -26,6 +29,9 @@
 		12DEE01122642DC2006279BF /* Assistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assistant.swift; sourceTree = "<group>"; };
 		12DEE01322642E18006279BF /* viewController02.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewController02.swift; sourceTree = "<group>"; };
 		12DEE01522644714006279BF /* TToolBoxPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TToolBoxPage.swift; sourceTree = "<group>"; };
+		12DEE0172264471D006279BF /* MyCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionView.swift; sourceTree = "<group>"; };
+		171F9D3122648E520064C5DF /* Mine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mine.swift; sourceTree = "<group>"; };
+		171F9D3322648E740064C5DF /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		7C21EB7222644ED500BD46C4 /* Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translate.swift; sourceTree = "<group>"; };
 		7C21EB76226455C600BD46C4 /* FirstWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWeather.swift; sourceTree = "<group>"; };
 		7C21EB782264561A00BD46C4 /* Setstroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setstroke.swift; sourceTree = "<group>"; };
@@ -62,6 +68,7 @@
 			children = (
 				7C21EB752264539A00BD46C4 /* Stroke weather */,
 				7C21EB742264534700BD46C4 /* Real_time translation */,
+				12DEE0172264471D006279BF /* MyCollectionView.swift */,
 				12DEE01522644714006279BF /* TToolBoxPage.swift */,
 			);
 			path = ToolBox;
@@ -88,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				92104A26224DE7220042FD2A /* MyViewController.swift */,
+				171F9D3122648E520064C5DF /* Mine.swift */,
+				171F9D3322648E740064C5DF /* login.swift */,
 			);
 			path = My;
 			sourceTree = "<group>";
@@ -232,9 +241,11 @@
 				12DEE01422642E19006279BF /* viewController02.swift in Sources */,
 				12DEE01222642DC2006279BF /* Assistant.swift in Sources */,
 				12DEE00922642845006279BF /* MyTrip.swift in Sources */,
+				171F9D3422648E740064C5DF /* login.swift in Sources */,
 				7C21EB792264561A00BD46C4 /* Setstroke.swift in Sources */,
 				92104A27224DE7220042FD2A /* MyViewController.swift in Sources */,
 				12DEE01622644714006279BF /* TToolBoxPage.swift in Sources */,
+				171F9D3222648E530064C5DF /* Mine.swift in Sources */,
 				7C21EB7322644ED500BD46C4 /* Translate.swift in Sources */,
 				92104A25224DE7220042FD2A /* AppDelegate.swift in Sources */,
 				7C21EB77226455C600BD46C4 /* FirstWeather.swift in Sources */,

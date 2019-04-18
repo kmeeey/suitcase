@@ -6,4 +6,8 @@
 //  Copyright © 2019 com.niit.ios. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class Setstroke: UIViewController {
+    
+}
