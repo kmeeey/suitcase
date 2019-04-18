@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		12DEE01222642DC2006279BF /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01122642DC2006279BF /* Assistant.swift */; };
 		12DEE01622644714006279BF /* TToolBoxPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01522644714006279BF /* TToolBoxPage.swift */; };
-		171C6A3922686D54000381F5 /* NewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C6A3822686D54000381F5 /* NewTableViewCell.swift */; };
-		171C6A3B22686D6B000381F5 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C6A3A22686D6B000381F5 /* Register.swift */; };
-		171C6A3D22686D8B000381F5 /* MyTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C6A3C22686D8B000381F5 /* MyTrip.swift */; };
+		171C6A3F226878FD000381F5 /* NewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C6A3E226878FD000381F5 /* NewTableViewCell.swift */; };
+		171C6A4122687916000381F5 /* MyTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C6A4022687916000381F5 /* MyTrip.swift */; };
+		171C6A4322687939000381F5 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C6A4222687939000381F5 /* Register.swift */; };
 		171F9D3222648E530064C5DF /* Mine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F9D3122648E520064C5DF /* Mine.swift */; };
 		171F9D3422648E740064C5DF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F9D3322648E740064C5DF /* Login.swift */; };
 		36D088462268690F00C727FC /* CreatJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D088452268690F00C727FC /* CreatJourney.swift */; };
@@ -31,10 +31,9 @@
 /* Begin PBXFileReference section */
 		12DEE01122642DC2006279BF /* Assistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assistant.swift; sourceTree = "<group>"; };
 		12DEE01522644714006279BF /* TToolBoxPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TToolBoxPage.swift; sourceTree = "<group>"; };
-		12DEE0172264471D006279BF /* MyCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionView.swift; sourceTree = "<group>"; };
-		171C6A3822686D54000381F5 /* NewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewTableViewCell.swift; path = ../../../../Downloads/NewTableViewCell.swift; sourceTree = "<group>"; };
-		171C6A3A22686D6B000381F5 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Register.swift; path = ../../../../Downloads/Register.swift; sourceTree = "<group>"; };
-		171C6A3C22686D8B000381F5 /* MyTrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTrip.swift; path = ../../../../Downloads/MyTrip.swift; sourceTree = "<group>"; };
+		171C6A3E226878FD000381F5 /* NewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewCell.swift; sourceTree = "<group>"; };
+		171C6A4022687916000381F5 /* MyTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTrip.swift; sourceTree = "<group>"; };
+		171C6A4222687939000381F5 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		171F9D3122648E520064C5DF /* Mine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mine.swift; sourceTree = "<group>"; };
 		171F9D3322648E740064C5DF /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		36D088452268690F00C727FC /* CreatJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatJourney.swift; sourceTree = "<group>"; };
@@ -97,8 +96,8 @@
 		12DEE00D22642CA1006279BF /* Travel */ = {
 			isa = PBXGroup;
 			children = (
-				171C6A3822686D54000381F5 /* NewTableViewCell.swift */,
-				171C6A3C22686D8B000381F5 /* MyTrip.swift */,
+				171C6A3E226878FD000381F5 /* NewTableViewCell.swift */,
+				171C6A4022687916000381F5 /* MyTrip.swift */,
 			);
 			path = Travel;
 			sourceTree = "<group>";
@@ -106,10 +105,10 @@
 		12DEE00E22642CB7006279BF /* My */ = {
 			isa = PBXGroup;
 			children = (
-				171C6A3A22686D6B000381F5 /* Register.swift */,
 				92104A26224DE7220042FD2A /* MyViewController.swift */,
 				171F9D3122648E520064C5DF /* Mine.swift */,
 				171F9D3322648E740064C5DF /* Login.swift */,
+				171C6A4222687939000381F5 /* Register.swift */,
 			);
 			path = My;
 			sourceTree = "<group>";
@@ -252,21 +251,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				12DEE01222642DC2006279BF /* Assistant.swift in Sources */,
+				171C6A4322687939000381F5 /* Register.swift in Sources */,
 				171F9D3422648E740064C5DF /* Login.swift in Sources */,
-				171C6A3B22686D6B000381F5 /* Register.swift in Sources */,
 				7C21EB792264561A00BD46C4 /* Setstroke.swift in Sources */,
 				36D088462268690F00C727FC /* CreatJourney.swift in Sources */,
 				36D088482268692500C727FC /* ListPage.swift in Sources */,
+				171C6A4122687916000381F5 /* MyTrip.swift in Sources */,
 				92104A27224DE7220042FD2A /* MyViewController.swift in Sources */,
 				36D0884A2268693900C727FC /* SetJourney.swift in Sources */,
 				12DEE01622644714006279BF /* TToolBoxPage.swift in Sources */,
-				171C6A3922686D54000381F5 /* NewTableViewCell.swift in Sources */,
 				171F9D3222648E530064C5DF /* Mine.swift in Sources */,
 				36D0884C2268694C00C727FC /* TripPage.swift in Sources */,
 				7C21EB7322644ED500BD46C4 /* Translate.swift in Sources */,
 				92104A25224DE7220042FD2A /* AppDelegate.swift in Sources */,
-				171C6A3D22686D8B000381F5 /* MyTrip.swift in Sources */,
 				7C21EB77226455C600BD46C4 /* FirstWeather.swift in Sources */,
+				171C6A3F226878FD000381F5 /* NewTableViewCell.swift in Sources */,
 				92104A3B22545BE70042FD2A /* TabbarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
