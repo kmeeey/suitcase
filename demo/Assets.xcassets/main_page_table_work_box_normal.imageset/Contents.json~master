@@ -1,0 +1,25 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+<<<<<<< HEAD:demo/Assets.xcassets/image1.imageset/Contents.json
+      "filename" : "IMG_0058的副本.jpg",
+=======
+      "filename" : "main_page_table_work_box_normal.png",
+>>>>>>> master:demo/Assets.xcassets/main_page_table_work_box_normal.imageset/Contents.json
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

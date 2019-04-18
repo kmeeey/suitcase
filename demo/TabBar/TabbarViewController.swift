@@ -31,7 +31,7 @@ class TabbarViewController: UITabBarController {
         let myTrip = MyTrip();
         self.setViewControllerItem(vc: myTrip, title: "游记", imgNor: UIImage.init(named: "main_page_table_youji_normal")!, imgSel: UIImage.init(named: "main_page_table_youji_press")! )
         
-        let my = MyViewController();
+        let my = Mine();
         self.setViewControllerItem(vc: my, title: "我的", imgNor: UIImage.init(named: "main_page_table_myself_normal")!, imgSel: UIImage.init(named: "main_page_table_myself_press")! )
         
         

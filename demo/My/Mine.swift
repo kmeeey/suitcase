@@ -16,7 +16,7 @@ class Mine : UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        self.view.backgroundColor =  #colorLiteral(red: 0.9323816895, green: 0.9372828603, blue: 0.9544377923, alpha: 1);
+        self.view.backgroundColor =  #colorLiteral(red: 0.9323816895, green: 0.9372828603, blue: 0.9544377923, alpha: 1);
         let image_view = UIImageView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 200))
         //        image_view.image = UIImage.init(named: "")
         image_view.image = UIImage.init(named: "login_page_fragment_center_top.png")
@@ -60,13 +60,14 @@ class Mine : UIViewController{
         btn_reg.setTitleColor(.black, for: .normal)
         btn_reg.backgroundColor = .clear
         btn_reg.titleLabel?.textAlignment = .center
+        btn_reg.addTarget(self, action: #selector(RegClick), for: .touchDown)
         image_view.addSubview(btn_reg)
         //注册虚线
         let lineDash1 = UIImageView(frame: CGRect(x: btn_reg.frame.origin.x + 5, y: btn_reg.frame.origin.y + btn_reg.frame.height, width: 40, height: 1))
         lineDash1.image = UIImage.init(named: "login_page_fragment_center_line")
         image_view.addSubview(lineDash1)
         let view = UIView(frame: CGRect(x: 0, y: image_view.frame.origin.y + image_view.frame.height - 55, width: self.view.frame.width, height: 55))
-        //        view.backgroundColor =  #colorLiteral(red: 0.6704113483, green: 0.532043159, blue: 0.5259997845, alpha: 1)
+        view.backgroundColor =  #colorLiteral(red: 0.6704113483, green: 0.532043159, blue: 0.5259997845, alpha: 1)
         view.alpha = 0.65
         image_view.addSubview(view)
         //游记
@@ -168,16 +169,16 @@ class Mine : UIViewController{
         let sync = UILabel(frame: CGRect(x: note.frame.origin.x + note.frame.width + 5, y: (view2.frame.height - 30)/2, width: 60, height: 30))
         sync.text = "已同步"
         sync.textAlignment = .center
-        //        sync.textColor = #colorLiteral(red: 0.4675745964, green: 0.7651544213, blue: 0.6870430112, alpha: 1)
+        sync.textColor = #colorLiteral(red: 0.4675745964, green: 0.7651544213, blue: 0.6870430112, alpha: 1)
         sync.font = UIFont.systemFont(ofSize: 14)
         sync.backgroundColor = .clear
-        //        sync.layer.borderColor = #colorLiteral(red: 0.4675745964, green: 0.7651544213, blue: 0.6870430112, alpha: 1)
+        sync.layer.borderColor = #colorLiteral(red: 0.4675745964, green: 0.7651544213, blue: 0.6870430112, alpha: 1)
         sync.layer.cornerRadius = 5
         sync.layer.borderWidth = 2
         view2.addSubview(sync)
         
         let btn_sync = UIButton(frame: CGRect(x:view2.frame.width - 110, y:(view2.frame.height - 40)/2, width: 90, height:40))
-        //        btn_sync.backgroundColor = #colorLiteral(red: 0.4675745964, green: 0.7651544213, blue: 0.6870430112, alpha: 1)
+        btn_sync.backgroundColor = #colorLiteral(red: 0.4675745964, green: 0.7651544213, blue: 0.6870430112, alpha: 1)
         btn_sync.setTitle("同步", for: .normal)
         btn_sync.setTitleColor(.white, for: .normal)
         btn_sync.titleLabel?.textAlignment = .center
@@ -185,7 +186,7 @@ class Mine : UIViewController{
         view2.addSubview(btn_sync)
         //分割线
         let line4 = UIView(frame: CGRect(x: note.frame.origin.x, y: view2.frame.origin.y + view2.frame.height , width: self.view.frame.width, height: 1))
-        //        line4.backgroundColor = #colorLiteral(red: 0.9107275605, green: 0.9056703448, blue: 0.9143057466, alpha: 1)
+        line4.backgroundColor = #colorLiteral(red: 0.9107275605, green: 0.9056703448, blue: 0.9143057466, alpha: 1)
         self.view.addSubview(line4)
         //导出Excel
         let export = UILabel(frame: CGRect(x: 0, y: view2.frame.origin.y + view2.frame.height + 1, width: self.view.frame.width, height: 50))
@@ -193,7 +194,7 @@ class Mine : UIViewController{
         self.view.addSubview(export)
         
         let btn_export = UIButton(frame: CGRect(x:export.frame.width - 110, y:(export.frame.height - 40)/2, width: 90, height:40))
-        //        btn_export.backgroundColor = #colorLiteral(red: 0.4675745964, green: 0.7651544213, blue: 0.6870430112, alpha: 1)
+        btn_export.backgroundColor = #colorLiteral(red: 0.4675745964, green: 0.7651544213, blue: 0.6870430112, alpha: 1)
         btn_export.setTitle("导出Excel", for: .normal)
         btn_export.setTitleColor(.white, for: .normal)
         btn_export.titleLabel?.textAlignment = .center
@@ -213,16 +214,16 @@ class Mine : UIViewController{
         let sync2 = UILabel(frame: CGRect(x: tra_ass.frame.origin.x + tra_ass.frame.width , y: (view3.frame.height - 30)/2, width: 60, height: 30))
         sync2.text = "未同步"
         sync2.textAlignment = .center
-        //        sync2.textColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
+        sync2.textColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
         sync2.font = UIFont.systemFont(ofSize: 14)
         sync2.backgroundColor = .clear
-        //        sync2.layer.borderColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
+        sync2.layer.borderColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
         sync2.layer.cornerRadius = 5
         sync2.layer.borderWidth = 2
         view3.addSubview(sync2)
         
         let btn_sync2 = UIButton(frame: CGRect(x:view3.frame.width - 110, y:(view3.frame.height - 40)/2, width: 90, height:40))
-        //        btn_sync2.backgroundColor = #colorLiteral(red: 0.4675745964, green: 0.7651544213, blue: 0.6870430112, alpha: 1)
+        btn_sync2.backgroundColor = #colorLiteral(red: 0.4675745964, green: 0.7651544213, blue: 0.6870430112, alpha: 1)
         btn_sync2.setTitle("同步", for: .normal)
         btn_sync2.setTitleColor(.white, for: .normal)
         btn_sync2.titleLabel?.textAlignment = .center
@@ -230,7 +231,7 @@ class Mine : UIViewController{
         view3.addSubview(btn_sync2)
         //分割线
         let line5 = UIView(frame: CGRect(x: tra_ass.frame.origin.x, y: view3.frame.origin.y + view3.frame.height, width: self.view.frame.width, height: 1))
-        //        line5.backgroundColor = #colorLiteral(red: 0.9107275605, green: 0.9056703448, blue: 0.9143057466, alpha: 1)
+        line5.backgroundColor = #colorLiteral(red: 0.9107275605, green: 0.9056703448, blue: 0.9143057466, alpha: 1)
         self.view.addSubview(line5)
         //全部同步
         let sync_All = UILabel(frame: CGRect(x: 0, y: view3.frame.origin.y + view3.frame.height + 1, width: self.view.frame.width, height: 50))
@@ -238,7 +239,7 @@ class Mine : UIViewController{
         self.view.addSubview(sync_All)
         
         let btn_sync_All = UIButton(frame: CGRect(x:sync_All.frame.width - 110, y:(sync_All.frame.height - 40)/2, width: 90, height:40))
-        //        btn_sync_All.backgroundColor = #colorLiteral(red: 0.4675745964, green: 0.7651544213, blue: 0.6870430112, alpha: 1)
+        btn_sync_All.backgroundColor = #colorLiteral(red: 0.4675745964, green: 0.7651544213, blue: 0.6870430112, alpha: 1)
         btn_sync_All.setTitle("全部同步", for: .normal)
         btn_sync_All.setTitleColor(.white, for: .normal)
         btn_sync_All.titleLabel?.textAlignment = .center
@@ -275,6 +276,11 @@ class Mine : UIViewController{
         let loginConterll  = Login()
         self.present(loginConterll, animated:true)
     }
+    @objc func RegClick(){
+        let regConterll  = Register()
+        self.present(regConterll, animated:true)
+    }
+    
     
     
     
