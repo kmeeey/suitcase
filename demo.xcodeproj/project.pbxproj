@@ -77,7 +77,6 @@
 			children = (
 				7C21EB752264539A00BD46C4 /* Stroke weather */,
 				7C21EB742264534700BD46C4 /* Real_time translation */,
-				12DEE0172264471D006279BF /* MyCollectionView.swift */,
 				12DEE01522644714006279BF /* TToolBoxPage.swift */,
 			);
 			path = ToolBox;
