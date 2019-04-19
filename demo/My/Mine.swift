@@ -37,7 +37,7 @@ class Mine : UIViewController{
         image_view.addSubview(setting)
         //邮件
         let mail = UIButton(frame: CGRect(x: title.frame.origin.x + title.frame.width + 80, y: 44, width: 25, height: 25))
-        mail.setImage(UIImage.init(named: "mail"), for: .normal)
+        mail.setImage(UIImage.init(named: "UC_MsgCenter_Icon_25x25_@2x"), for: .normal)
         image_view.addSubview(mail)
         
         //登录
@@ -71,9 +71,9 @@ class Mine : UIViewController{
         view.alpha = 0.65
         image_view.addSubview(view)
         //游记
-        btn_travel = UIButton(frame: CGRect(x: 0, y: 10, width: (self.view.frame.width)/4, height: 25))
-        btn_travel.setImage(UIImage.init(named: "parachute_white"), for: .normal)
-        btn_travel.addTarget(self, action: #selector(travelClick), for: UIControl.Event.touchDown)
+        btn_travel = UIButton(frame: CGRect(x: 0, y: 5, width: (self.view.frame.width)/4, height: 30))
+        btn_travel.setImage(UIImage.init(named: "UC_Album_Icon_30x30_@2x"), for: .normal)
+        btn_travel.addTarget(self, action: #selector(onClick), for: UIControl.Event.touchDown)
         view.addSubview(btn_travel)
         
         let travel = UILabel(frame: CGRect(x: btn_travel.frame.origin.x, y: btn_travel.frame.origin.y + btn_travel.frame.height, width: (self.view.frame.width)/4, height:15))
@@ -89,9 +89,9 @@ class Mine : UIViewController{
         line.alpha = 0.5
         view.addSubview(line)
         //账单
-        let btn_bill = UIButton(frame: CGRect(x:line.frame.origin.x + line.frame.width , y: 10, width: (self.view.frame.width)/4, height: 25))
-        btn_bill.setImage(UIImage.init(named: "parachute_white"), for: .normal)
-        btn_bill.addTarget(self, action: #selector(travelClick), for: UIControl.Event.touchDown)
+        let btn_bill = UIButton(frame: CGRect(x:line.frame.origin.x + line.frame.width , y: 5, width: (self.view.frame.width)/4, height: 30))
+        btn_bill.setImage(UIImage.init(named: "UC_TravelBill_Icon_30x30_@2x"), for: .normal)
+        btn_bill.addTarget(self, action: #selector(onClick), for: UIControl.Event.touchDown)
         view.addSubview(btn_bill)
         
         let bill = UILabel(frame: CGRect(x: btn_bill.frame.origin.x, y: btn_bill.frame.origin.y + btn_bill.frame.height, width: (self.view.frame.width)/4, height:15))
@@ -107,9 +107,9 @@ class Mine : UIViewController{
         line2.alpha = 0.5
         view.addSubview(line2)
         //收藏
-        let btn_collect = UIButton(frame: CGRect(x:line2.frame.origin.x + line2.frame.width , y: 10, width: (self.view.frame.width)/4, height: 25))
-        btn_collect.setImage(UIImage.init(named: "parachute_white"), for: .normal)
-        btn_collect.addTarget(self, action: #selector(travelClick), for: UIControl.Event.touchDown)
+        let btn_collect = UIButton(frame: CGRect(x:line2.frame.origin.x + line2.frame.width , y: 5, width: (self.view.frame.width)/4, height: 30))
+        btn_collect.setImage(UIImage.init(named: "UC_Collection_Icon_30x30_@2x"), for: .normal)
+        btn_collect.addTarget(self, action: #selector(onClick), for: UIControl.Event.touchDown)
         view.addSubview(btn_collect)
         
         let collect = UILabel(frame: CGRect(x: btn_collect.frame.origin.x, y: btn_collect.frame.origin.y + btn_collect.frame.height, width: (self.view.frame.width)/4, height:15))
@@ -127,9 +127,9 @@ class Mine : UIViewController{
         view.addSubview(line3)
         
         //关注
-        let btn_attention = UIButton(frame: CGRect(x:line3.frame.origin.x + line3.frame.width , y: 10, width: (self.view.frame.width)/4, height: 25))
-        btn_attention.setImage(UIImage.init(named: "parachute_white"), for: .normal)
-        btn_attention.addTarget(self, action: #selector(travelClick), for: UIControl.Event.touchDown)
+        let btn_attention = UIButton(frame: CGRect(x:line3.frame.origin.x + line3.frame.width , y:5 , width: (self.view.frame.width)/4, height: 30))
+        btn_attention.setImage(UIImage.init(named: "UC_Attention_Icon_30x30_@2x"), for: .normal)
+        btn_attention.addTarget(self, action: #selector(onClick), for: UIControl.Event.touchDown)
         view.addSubview(btn_attention)
         
         let attention = UILabel(frame: CGRect(x: btn_attention.frame.origin.x, y: btn_attention.frame.origin.y + btn_attention.frame.height, width: (self.view.frame.width)/4, height:15))
@@ -268,8 +268,8 @@ class Mine : UIViewController{
         
     }
     
-    @objc func travelClick(){
-        btn_travel.setImage(UIImage.init(named: "parachute_black"), for: .highlighted)
+    @objc func onClick(){
+        btn_travel.setImage(UIImage.init(named: ""), for: .highlighted)
     }
     
     @objc func loginClick(){

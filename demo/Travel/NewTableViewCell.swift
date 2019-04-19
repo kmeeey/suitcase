@@ -36,15 +36,15 @@ class NewTableViewCell: UITableViewCell {
         icon1.layer.cornerRadius = 30.0
         
         let icon2 = UIImageView(frame: CGRect.init(x:10 , y: 230 - 40, width: 30, height: 30))
-        let image2 = UIImage(named: "dianzan")
+        let image2 = UIImage(named: "dianzan-icon")
         icon2.image = image2
         
         let icon3 =  UIImageView(frame: CGRect.init(x: width - 180, y: icon2.frame.origin.y, width: 30, height: 30))
-        let image3 = UIImage(named: "main_page_table_find_normal")
+        let image3 = UIImage(named: "yanjing-icon")
         icon3.image = image3
         
         let icon4 = UIImageView(frame: CGRect.init(x: width - 100, y: icon2.frame.origin.y, width: 30, height: 30))
-        let image4 = UIImage(named: "pinglun")
+        let image4 = UIImage(named: "pinglun-icon")
         icon4.image = image4
         
         
