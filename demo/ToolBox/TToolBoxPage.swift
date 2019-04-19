@@ -70,15 +70,21 @@ class TToolBoxPage: UIViewController ,UICollectionViewDataSource,UICollectionVie
             let firstWeather = FirstWeather()
             self.present(firstWeather, animated: true, completion: nil)
             break
-    
+            
         case 1 :
             let translate = Translate()
             self.present(translate, animated: true, completion: nil)
             break
         case 2 : break
-            
+        case 5 :
+            let travelInsurance = TravelInsurance()
+            self.present(travelInsurance, animated: true, completion: nil)
+            break
+        case 6 :
+            let travelInformation = TravelInformation()
+            self.present(travelInformation, animated: true, completion: nil)
+            break
         default: break
-            
         }
         
     }
