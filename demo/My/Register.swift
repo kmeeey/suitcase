@@ -21,7 +21,7 @@ class Register: UIViewController {
         let navigationBarHeight: CGFloat = 44//默认高度
         let navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 30, width: screen.size.width, height: navigationBarHeight))
         //设置按钮
-        let leftbtn =  UIBarButtonItem(title:"返回", style:UIBarButtonItem.Style.plain, target: self, action:nil)
+        let leftbtn =  UIBarButtonItem(title:"返回", style:UIBarButtonItem.Style.plain, target: self, action:#selector(back))
         let rightbtn = UIBarButtonItem(title: "登录", style: .plain, target: self, action: nil)
         //按钮文字颜色
         leftbtn.tintColor = UIColor.red
@@ -111,6 +111,8 @@ class Register: UIViewController {
         self.view.addSubview(runle2)
         
     }
-    
+    @objc func back() {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }
