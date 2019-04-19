@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0779DC692269645F000B2726 /* TravelInsurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0779DC682269645F000B2726 /* TravelInsurance.swift */; };
-		0779DC7322696CCA000B2726 /* TravelInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0779DC7222696CCA000B2726 /* TravelInformation.swift */; };
-		0779DC7522696D0C000B2726 /* NewUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0779DC7422696D0C000B2726 /* NewUITableView.swift */; };
+		121B8F9E22695BC5003198A5 /* Set_stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B8F9D22695BC5003198A5 /* Set_stroke.swift */; };
+		121B8FA022697152003198A5 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B8F9F22697152003198A5 /* CurrencyConverter.swift */; };
+		121B8FA922699297003198A5 /* CurrencyChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B8FA822699296003198A5 /* CurrencyChoice.swift */; };
+		121B8FAF22699B43003198A5 /* TravelInsurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B8FAB22699B42003198A5 /* TravelInsurance.swift */; };
+		121B8FB022699B43003198A5 /* TravelInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B8FAD22699B42003198A5 /* TravelInformation.swift */; };
+		121B8FB122699B43003198A5 /* NewUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B8FAE22699B42003198A5 /* NewUITableView.swift */; };
 		12DEE01222642DC2006279BF /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01122642DC2006279BF /* Assistant.swift */; };
-		12DEE01622644714006279BF /* TToolBoxPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01522644714006279BF /* TToolBoxPage.swift */; };
+		12DEE01622644714006279BF /* ToolBoxPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01522644714006279BF /* ToolBoxPage.swift */; };
 		171C6A3F226878FD000381F5 /* NewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C6A3E226878FD000381F5 /* NewTableViewCell.swift */; };
 		171C6A4122687916000381F5 /* MyTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C6A4022687916000381F5 /* MyTrip.swift */; };
 		171C6A4322687939000381F5 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C6A4222687939000381F5 /* Register.swift */; };
@@ -24,7 +27,6 @@
 		36D0884C2268694C00C727FC /* TripPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D0884B2268694C00C727FC /* TripPage.swift */; };
 		7C21EB7322644ED500BD46C4 /* Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21EB7222644ED500BD46C4 /* Translate.swift */; };
 		7C21EB77226455C600BD46C4 /* FirstWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21EB76226455C600BD46C4 /* FirstWeather.swift */; };
-		7C21EB792264561A00BD46C4 /* Setstroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C21EB782264561A00BD46C4 /* Setstroke.swift */; };
 		92104A25224DE7220042FD2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92104A24224DE7220042FD2A /* AppDelegate.swift */; };
 		92104A27224DE7220042FD2A /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92104A26224DE7220042FD2A /* MyViewController.swift */; };
 		92104A2C224DE7230042FD2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92104A2B224DE7230042FD2A /* Assets.xcassets */; };
@@ -33,11 +35,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0779DC682269645F000B2726 /* TravelInsurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInsurance.swift; sourceTree = "<group>"; };
-		0779DC7222696CCA000B2726 /* TravelInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelInformation.swift; sourceTree = "<group>"; };
-		0779DC7422696D0C000B2726 /* NewUITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUITableView.swift; sourceTree = "<group>"; };
+		121B8F9D22695BC5003198A5 /* Set_stroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set_stroke.swift; sourceTree = "<group>"; };
+		121B8F9F22697152003198A5 /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
+		121B8FA822699296003198A5 /* CurrencyChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyChoice.swift; sourceTree = "<group>"; };
+		121B8FAB22699B42003198A5 /* TravelInsurance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelInsurance.swift; sourceTree = "<group>"; };
+		121B8FAD22699B42003198A5 /* TravelInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelInformation.swift; sourceTree = "<group>"; };
+		121B8FAE22699B42003198A5 /* NewUITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUITableView.swift; sourceTree = "<group>"; };
 		12DEE01122642DC2006279BF /* Assistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assistant.swift; sourceTree = "<group>"; };
-		12DEE01522644714006279BF /* TToolBoxPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TToolBoxPage.swift; sourceTree = "<group>"; };
+		12DEE01522644714006279BF /* ToolBoxPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBoxPage.swift; sourceTree = "<group>"; };
 		171C6A3E226878FD000381F5 /* NewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewCell.swift; sourceTree = "<group>"; };
 		171C6A4022687916000381F5 /* MyTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTrip.swift; sourceTree = "<group>"; };
 		171C6A4222687939000381F5 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
@@ -50,7 +55,6 @@
 		36D0884B2268694C00C727FC /* TripPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPage.swift; sourceTree = "<group>"; };
 		7C21EB7222644ED500BD46C4 /* Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translate.swift; sourceTree = "<group>"; };
 		7C21EB76226455C600BD46C4 /* FirstWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstWeather.swift; sourceTree = "<group>"; };
-		7C21EB782264561A00BD46C4 /* Setstroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setstroke.swift; sourceTree = "<group>"; };
 		92104A21224DE7220042FD2A /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92104A24224DE7220042FD2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92104A26224DE7220042FD2A /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
@@ -71,19 +75,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0779DC6722696433000B2726 /* Travel insurance */ = {
+		121B8F9A22695483003198A5 /* CurrencyConverter */ = {
 			isa = PBXGroup;
 			children = (
-				0779DC682269645F000B2726 /* TravelInsurance.swift */,
+				121B8F9F22697152003198A5 /* CurrencyConverter.swift */,
+				121B8FA822699296003198A5 /* CurrencyChoice.swift */,
+			);
+			path = CurrencyConverter;
+			sourceTree = "<group>";
+		};
+		121B8FAA22699B42003198A5 /* Travel insurance */ = {
+			isa = PBXGroup;
+			children = (
+				121B8FAB22699B42003198A5 /* TravelInsurance.swift */,
 			);
 			path = "Travel insurance";
 			sourceTree = "<group>";
 		};
-		0779DC7122696C97000B2726 /* Travel information */ = {
+		121B8FAC22699B42003198A5 /* Travel information */ = {
 			isa = PBXGroup;
 			children = (
-				0779DC7222696CCA000B2726 /* TravelInformation.swift */,
-				0779DC7422696D0C000B2726 /* NewUITableView.swift */,
+				121B8FAD22699B42003198A5 /* TravelInformation.swift */,
+				121B8FAE22699B42003198A5 /* NewUITableView.swift */,
 			);
 			path = "Travel information";
 			sourceTree = "<group>";
@@ -102,9 +115,11 @@
 				172D30C62269743F00AB08C3 /* Emergency rescue */,
 				0779DC7122696C97000B2726 /* Travel information */,
 				0779DC6722696433000B2726 /* Travel insurance */,
+
 				7C21EB752264539A00BD46C4 /* Stroke weather */,
 				7C21EB742264534700BD46C4 /* Real_time translation */,
-				12DEE01522644714006279BF /* TToolBoxPage.swift */,
+				12DEE01522644714006279BF /* ToolBoxPage.swift */,
+				121B8F9D22695BC5003198A5 /* Set_stroke.swift */,
 			);
 			path = ToolBox;
 			sourceTree = "<group>";
@@ -175,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				7C21EB76226455C600BD46C4 /* FirstWeather.swift */,
-				7C21EB782264561A00BD46C4 /* Setstroke.swift */,
 			);
 			path = "Stroke weather";
 			sourceTree = "<group>";
@@ -289,24 +303,28 @@
 				12DEE01222642DC2006279BF /* Assistant.swift in Sources */,
 				171C6A4322687939000381F5 /* Register.swift in Sources */,
 				171F9D3422648E740064C5DF /* Login.swift in Sources */,
-				0779DC7322696CCA000B2726 /* TravelInformation.swift in Sources */,
-				7C21EB792264561A00BD46C4 /* Setstroke.swift in Sources */,
 				36D088462268690F00C727FC /* CreatJourney.swift in Sources */,
 				0779DC7522696D0C000B2726 /* NewUITableView.swift in Sources */,
 				172D30C8226974AE00AB08C3 /* Rescue.swift in Sources */,
+
 				36D088482268692500C727FC /* ListPage.swift in Sources */,
 				171C6A4122687916000381F5 /* MyTrip.swift in Sources */,
 				92104A27224DE7220042FD2A /* MyViewController.swift in Sources */,
 				36D0884A2268693900C727FC /* SetJourney.swift in Sources */,
-				0779DC692269645F000B2726 /* TravelInsurance.swift in Sources */,
-				12DEE01622644714006279BF /* TToolBoxPage.swift in Sources */,
+				121B8FB122699B43003198A5 /* NewUITableView.swift in Sources */,
+				12DEE01622644714006279BF /* ToolBoxPage.swift in Sources */,
+				121B8FA022697152003198A5 /* CurrencyConverter.swift in Sources */,
+				121B8FAF22699B43003198A5 /* TravelInsurance.swift in Sources */,
 				171F9D3222648E530064C5DF /* Mine.swift in Sources */,
 				36D0884C2268694C00C727FC /* TripPage.swift in Sources */,
+				121B8FB022699B43003198A5 /* TravelInformation.swift in Sources */,
 				7C21EB7322644ED500BD46C4 /* Translate.swift in Sources */,
 				92104A25224DE7220042FD2A /* AppDelegate.swift in Sources */,
+				121B8FA922699297003198A5 /* CurrencyChoice.swift in Sources */,
 				7C21EB77226455C600BD46C4 /* FirstWeather.swift in Sources */,
 				171C6A3F226878FD000381F5 /* NewTableViewCell.swift in Sources */,
 				92104A3B22545BE70042FD2A /* TabbarViewController.swift in Sources */,
+				121B8F9E22695BC5003198A5 /* Set_stroke.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

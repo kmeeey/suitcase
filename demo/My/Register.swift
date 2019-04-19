@@ -36,15 +36,15 @@ class Register: UIViewController {
         self.view.addSubview(navigationBar)
         
         let icon1 = UIImageView(frame: CGRect.init(x: 50, y: 0, width: 50, height: 50))
-        let image1 = UIImage(named: "phone 13-31-08-190")
+        let image1 = UIImage(named: "UC_PhoneNumber_Icon_29x29_@2x")
         icon1.image = image1
         
         let icon2 = UIImageView(frame: CGRect.init(x: 50, y: 0, width: 50, height: 50))
-        let image2 = UIImage(named: "psw-icon 13-32-25-238")
+        let image2 = UIImage(named: "UC_Register_Icon_29x29_@2x")
         icon2.image = image2
         
         let icon3 = UIImageView(frame: CGRect.init(x: 50, y: 0, width: 50, height: 50))
-        let image3 =  UIImage(named: "login_page_fragment_register_password_icon")
+        let image3 =  UIImage(named: "UC_PassWord_Icon_29x29_@2x")
         icon3.image = image3
         
         let button = UIButton(frame:CGRect(x:0, y:0, width:100, height:40))
