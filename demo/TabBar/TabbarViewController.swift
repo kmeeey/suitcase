@@ -20,7 +20,7 @@ class TabbarViewController: UITabBarController {
     }
    
     func initViewControllers() -> Void {
-        let index = TToolBoxPage();
+        let index = ToolBoxPage();
         self.setViewControllerItem(vc: index, title: "工具箱", imgNor: UIImage.init(named: "main_page_table_work_box_normal")!, imgSel: UIImage.init(named: "main_page_table_work_box_press")!)
         
         let assistant = Assistant();

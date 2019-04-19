@@ -38,21 +38,10 @@ class SetStroke: UIViewController  {
         lbtle.font = UIFont.systemFont(ofSize: 15)
         lbtle.textAlignment = .left
         self.view.addSubview(lbtle)
-        //        let textFid = UITextField.init(frame: CGRect.init(x: (self.view.frame.size.width-100)/2, y: imgview.frame.origin.y + imgview.frame.size.height + 5, width: 200, height: 40));
-        //        textFid.placeholder = "出发城市"
-        
-        //        let imgview = UIImageView.init(frame: CGRect.init(x: (self.view.frame.size.width - 80)/2, y: lbTitle.frame.origin.y + 5 + lbTitle.frame.size.height, width: 80, height: 80))
-        //        //        imgview.image = UIImage.init(named: "audi.jpg");
-        //        imgview.backgroundColor = UIColor.red;
-        //        self.view.addSubview(imgview);
-        
-        
-        //            (self.view.frame.size.width - 200)/2,
+
         
         let textFiled = UITextField.init(frame: CGRect.init(x: 5, y: navigationBarHeight+44+25, width: 380, height: 35))
-        //        textFiled.backgroundColor = UIColor.lightGray;
-        //    newTextField.leftView = UIImageView(image: UIImage(named: "location.png"))
-        //    newTextField.leftView = UITextFieldViewMode.Always
+        
         textFiled.placeholder = "出发城市";
         //textFiled.clearButtonMode = .whileEditing
         textFiled.font = UIFont.systemFont(ofSize:15)
@@ -67,9 +56,6 @@ class SetStroke: UIViewController  {
         let line = UILabel.init(frame: CGRect.init(x: 5, y: 60, width:200, height:1))
         line.textColor = UIColor.red
         self.view.addSubview(line)
-        
-        
-        
         
         
         let select = UIButton.init(frame:CGRect.init(x: textFiled.frame.origin.x + 290,y: navigationBarHeight+44+25, width: 57, height: 35 ))
@@ -162,15 +148,6 @@ class SetStroke: UIViewController  {
         pic.image = UIImage.init(named:"calendar.png")
         text1.leftViewMode = .always
         text1.leftView = pic
-        
-        
-        
-        
-        
-        
-        
-        
-        
     }
     @objc func back(_ sender: AnyObject){
         
@@ -188,36 +165,6 @@ class SetStroke: UIViewController  {
 }
 
 
-
-
-
-//        let textView = UITextView.init(frame: CGRect.init(x: (self.view.frame.size.width - 200 ) / 2, y: textFiled.frame.origin.y + textFiled.frame.size.height + 5, width: 250, height: 40));
-//        textView.text = "南京";
-//        textView.textAlignment = NSTextAlignment.center;
-//        textView.backgroundColor = UIColor.gray;
-//        self.view.addSubview(textView);
-
-
-
-
-
-//        let lbTitle = UILabel.init(frame: CGRect.init(x: 5, y: 20 + 44, width: self.view.frame.size.width, height: 20));
-//        let lbButton = UILabel.init(frame: CGRect.init(x: 5,y: 20+44, width: self.view.frame.size.width,height:20))
-//        lbButton.text = "返回"
-//        lbButton.textColor = UIColor.red
-//        lbButton.font = UIFont.systemFont(ofSize:20);
-//         lbTitle.textAlignment = NSTextAlignment.left;
-//        self.view.addSubview(lbButton);
-//        lbTitle.text = "设置旅程";
-//        lbTitle.textColor = UIColor.gray;
-//        lbTitle.font = UIFont.systemFont(ofSize: 20);
-//        lbTitle.textAlignment = NSTextAlignment.center;
-//        self.view.addSubview(lbTitle);
-//        let textFiled = UITextField.init(frame: CGRect.init(x: 5, y: 20 + 44, width: self.view.frame.size.width, height: 40));
-//        textFiled.text = "选择出发城市";
-//        textFiled.textColor = UIColor.gray;
-//        self.view.addSubview(textFiled);
-//    }
 
 
 
