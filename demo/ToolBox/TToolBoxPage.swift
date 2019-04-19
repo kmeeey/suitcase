@@ -84,6 +84,10 @@ class TToolBoxPage: UIViewController ,UICollectionViewDataSource,UICollectionVie
             let travelInformation = TravelInformation()
             self.present(travelInformation, animated: true, completion: nil)
             break
+        case 7 :
+            let rescue = Rescue()
+            self.present(rescue, animated: true, completion: nil)
+            break
         default: break
         }
         
