@@ -41,8 +41,8 @@ class TabbarViewController: UITabBarController {
     
     func setViewControllerItem(vc: UIViewController,title: String, imgNor: UIImage, imgSel: UIImage) -> Void {
         let item = UITabBarItem.init(title: title, image: imgNor.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), selectedImage: imgSel.withRenderingMode(UIImage.RenderingMode.alwaysOriginal));
-        item.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.blue], for: UIControl.State.normal);
-        item.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.green], for: UIControl.State.highlighted);
+        item.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.gray], for: UIControl.State.normal);
+        item.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.black], for: UIControl.State.highlighted);
         vc.tabBarItem = item;
         let  cusNav = UINavigationController.init(rootViewController: vc);
         cusNav.navigationBar.tintColor = UIColor.white;

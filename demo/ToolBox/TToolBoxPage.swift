@@ -34,6 +34,11 @@ class TToolBoxPage: UIViewController ,UICollectionViewDataSource,UICollectionVie
         imageViewmain = UIImageView(image: UIImage(named: "main_page_top_set"))
         imageViewmain!.frame = CGRect(x: 0, y: 0, width:ScreenWidth, height:ScreenHeight/2 )
         imageViewmain?.contentMode = UIImageView.ContentMode.scaleAspectFit
+        imageViewmain?.isUserInteractionEnabled = true
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action:#selector(TToolBoxPage.tapGestureRecognizer(sender:)))
+        
+        imageViewmain?.addGestureRecognizer(tapGestureRecognizer)
         
         self.view.addSubview(imageViewmain!)
   
@@ -48,6 +53,10 @@ class TToolBoxPage: UIViewController ,UICollectionViewDataSource,UICollectionVie
         self.view.addSubview(myCollectionView)
         
     }
+    @objc func tapGestureRecognizer(sender:UITapGestureRecognizer) {
+        let setstroke = SetStroke()
+        self.present(setstroke, animated: true, completion: nil)
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 9
@@ -55,7 +64,6 @@ class TToolBoxPage: UIViewController ,UICollectionViewDataSource,UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         cell = collectionView.dequeueReusableCell(withReuseIdentifier: cid, for: indexPath)
-        
         
         cell.backgroundColor = .red
         cell.layer.borderWidth = 1
