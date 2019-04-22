@@ -8,6 +8,7 @@
 
 import UIKit
 class Rescue : UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0.9323816895, green: 0.9372828603, blue: 0.9544377923, alpha: 1)
@@ -23,6 +24,7 @@ class Rescue : UIViewController {
         let view = UIView(frame: CGRect(x: 15 , y: navigationBar.frame.origin.y + navigationBar.frame.height + 10, width: self.view.frame.width - 25, height: self.view.frame.height/2 + 2))
         view.backgroundColor = .white
         self.view.addSubview(view)
+        view.isUserInteractionEnabled = true
         //背景图片
         let img1 = UIImageView(frame:CGRect(x: 5, y: 5, width: view.frame.width - 10, height: view.frame.height/2))
         img1.image = UIImage.init(named: "FindPlaceHolderImg_375x234_@2x")
@@ -42,6 +44,7 @@ class Rescue : UIViewController {
         
         //警察局电话
         let policePhoneView = UIButton(frame: CGRect(x: 0, y: line.frame.origin.y + line.frame.height , width: view.frame.width, height: (img1.frame.height - 10)/3 ))
+        policePhoneView.addTarget(self, action: #selector(police), for: .touchDown)
         view.addSubview(policePhoneView)
         
         let policeLab  = UILabel(frame: CGRect(x: 10, y: 5, width: 100, height: 30))
@@ -67,6 +70,7 @@ class Rescue : UIViewController {
         
         //救护车电话
         let ambulanceView = UIButton(frame: CGRect(x: 0, y: line1.frame.origin.y + line1.frame.height, width: view.frame.width, height: (img1.frame.height - 10)/3 ))
+        ambulanceView.addTarget(self, action: #selector(ambulance), for: .touchDown)
         view.addSubview(ambulanceView)
         
         let ambulanceLab  = UILabel(frame: CGRect(x: 10, y: 5, width: 100, height: 30))
@@ -92,6 +96,7 @@ class Rescue : UIViewController {
         
         //救护车电话
         let FAView = UIButton(frame: CGRect(x: 0, y: line2.frame.origin.y + line2.frame.height, width: view.frame.width, height: (img1.frame.height - 10)/3 ))
+         FAView.addTarget(self, action: #selector(FireA), for: .touchDown)
         view.addSubview(FAView)
         
         let FALab  = UILabel(frame: CGRect(x: 10, y: 5, width: 100, height: 30))
@@ -114,6 +119,53 @@ class Rescue : UIViewController {
     }
     @objc func back(){
         self.dismiss(animated: true, completion: nil)
+    }
+    @objc func police(){
+        let alter = UIAlertController(title: "", message: "拨打电话", preferredStyle: .actionSheet)
+        let phone = UIAlertAction(title: "110", style: .destructive) { (UIAlertAction) in
+            self.showAlter("110")
+        }
+        let cancel = UIAlertAction(title:"取消", style: .cancel) { (UIAlertAction) in}
+        
+        alter.addAction(phone)
+        alter.addAction(cancel)
+        
+        self.present(alter, animated: true, completion: nil)
+    }
+    @objc func ambulance(){
+        let alter = UIAlertController(title: "", message: "拨打电话", preferredStyle: .actionSheet)
+        let phone = UIAlertAction(title: "120", style: .destructive) { (UIAlertAction) in
+            self.showAlter("120")
+        }
+        let cancel = UIAlertAction(title:"取消", style: .cancel) { (UIAlertAction) in}
+        
+        alter.addAction(phone)
+        alter.addAction(cancel)
+        
+        self.present(alter, animated: true, completion: nil)
+    }
+    @objc func FireA(){
+        let alter = UIAlertController(title: "", message: "拨打电话", preferredStyle: .actionSheet)
+        let phone = UIAlertAction(title: "119", style: .destructive) { (UIAlertAction) in
+            self.showAlter("119")
+        }
+        let cancel = UIAlertAction(title:"取消", style: .cancel) { (UIAlertAction) in}
+        
+        alter.addAction(phone)
+        alter.addAction(cancel)
+        
+        self.present(alter, animated: true, completion: nil)
+    }
+    func showAlter(_ meg : String){
+        let alter = UIAlertController(title: "", message: meg, preferredStyle: .alert)
+        let yes = UIAlertAction(title: "呼叫", style: .default) { (UIAlertAction) in
+        }
+        let no = UIAlertAction(title: "取消", style: .cancel) { (UIAlertAction) in
+        }
+        alter.addAction(yes)
+        alter.addAction(no)
+        
+        self.present(alter, animated: true, completion: nil )
     }
 }
 

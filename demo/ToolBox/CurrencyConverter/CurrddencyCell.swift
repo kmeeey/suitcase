@@ -25,7 +25,7 @@ class CurrddencyCell: UITableViewCell {
         
         
         // 货币名称
-        currddencyLabel = UILabel(frame: CGRect(x: 74, y: 25, width: 100, height: 50))
+        currddencyLabel = UILabel(frame: CGRect(x: 74, y: 20, width: 100, height: 50))
         currddencyLabel.textColor = UIColor.black
         currddencyLabel.font = UIFont.boldSystemFont(ofSize: 21)
         currddencyLabel.textAlignment = .center
