@@ -14,7 +14,7 @@ class TravelInformation: UIViewController ,UITableViewDataSource,UITableViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        self.view.backgroundColor = .white
         
         //创建导航栏
         let navBar = UINavigationBar(frame: CGRect(x: 0, y: 30, width: self.view.frame.width, height: 30))

@@ -47,12 +47,7 @@ class CurrencyConverter: UIViewController {
         bt3.setImage(UIImage(named: "CNY_Icon_57x40_"), for: .normal)
         bt3.addTarget(self, action: #selector(currencyconverter), for: .touchDown)
         self.view.addSubview(bt3)
-        
-        
-        
-        
-        
-        
+ 
 
     }
     
@@ -65,7 +60,7 @@ class CurrencyConverter: UIViewController {
     }
     @objc func currencyconverter(_ sender: AnyObject){
         
-        let currencychoice = CurrencyChoice()
+        let currencychoice = CurrddencyCellController()
         self.present(currencychoice, animated: true, completion: nil)
         
     }
