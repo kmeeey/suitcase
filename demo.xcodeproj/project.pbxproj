@@ -16,6 +16,16 @@
 		04CC3B60226D8EAC00F3433C /* NewUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC3B5E226D8EAB00F3433C /* NewUITableView.swift */; };
 		04CC3B63226D8EB800F3433C /* TravelInsurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC3B62226D8EB800F3433C /* TravelInsurance.swift */; };
 		121B8F9E22695BC5003198A5 /* Set_stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B8F9D22695BC5003198A5 /* Set_stroke.swift */; };
+<<<<<<< HEAD
+=======
+
+		121B8FA022697152003198A5 /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B8F9F22697152003198A5 /* CurrencyConverter.swift */; };
+		121B8FAF22699B43003198A5 /* TravelInsurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B8FAB22699B42003198A5 /* TravelInsurance.swift */; };
+		121B8FB022699B43003198A5 /* TravelInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B8FAD22699B42003198A5 /* TravelInformation.swift */; };
+		121B8FB122699B43003198A5 /* NewUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B8FAE22699B42003198A5 /* NewUITableView.swift */; };
+		121B8FF0226D3C09003198A5 /* CurrddencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B8FEF226D3C09003198A5 /* CurrddencyCell.swift */; };
+		121B8FF2226D40AE003198A5 /* CurrddencyCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121B8FF1226D40AE003198A5 /* CurrddencyCellController.swift */; };
+>>>>>>> master
 		12DEE01222642DC2006279BF /* Assistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01122642DC2006279BF /* Assistant.swift */; };
 		12DEE01622644714006279BF /* ToolBoxPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DEE01522644714006279BF /* ToolBoxPage.swift */; };
 		171C6A3F226878FD000381F5 /* NewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C6A3E226878FD000381F5 /* NewTableViewCell.swift */; };
@@ -24,6 +34,12 @@
 		171F9D3222648E530064C5DF /* Mine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F9D3122648E520064C5DF /* Mine.swift */; };
 		171F9D3422648E740064C5DF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F9D3322648E740064C5DF /* Login.swift */; };
 		172D30C8226974AE00AB08C3 /* Rescue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D30C7226974AE00AB08C3 /* Rescue.swift */; };
+		1731C040226D45730041684A /* CurrencyChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731C03D226D45730041684A /* CurrencyChoice.swift */; };
+		1731C041226D45730041684A /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731C03E226D45730041684A /* CurrencyConverter.swift */; };
+		1731C046226D458C0041684A /* TravelInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731C044226D458B0041684A /* TravelInformation.swift */; };
+		1731C047226D458C0041684A /* NewUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731C045226D458B0041684A /* NewUITableView.swift */; };
+		1731C04A226D45940041684A /* TravelInsurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731C049226D45940041684A /* TravelInsurance.swift */; };
+		1731C04E226D9A310041684A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1731C04D226D9A310041684A /* .gitignore */; };
 		36D088462268690F00C727FC /* CreatJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D088452268690F00C727FC /* CreatJourney.swift */; };
 		36D088482268692500C727FC /* ListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D088472268692500C727FC /* ListPage.swift */; };
 		36D0884A2268693900C727FC /* SetJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D088492268693900C727FC /* SetJourney.swift */; };
@@ -47,6 +63,16 @@
 		04CC3B5E226D8EAB00F3433C /* NewUITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUITableView.swift; sourceTree = "<group>"; };
 		04CC3B62226D8EB800F3433C /* TravelInsurance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelInsurance.swift; sourceTree = "<group>"; };
 		121B8F9D22695BC5003198A5 /* Set_stroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set_stroke.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+
+		121B8F9F22697152003198A5 /* CurrencyConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
+		121B8FAB22699B42003198A5 /* TravelInsurance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelInsurance.swift; sourceTree = "<group>"; };
+		121B8FAD22699B42003198A5 /* TravelInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelInformation.swift; sourceTree = "<group>"; };
+		121B8FAE22699B42003198A5 /* NewUITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUITableView.swift; sourceTree = "<group>"; };
+		121B8FEF226D3C09003198A5 /* CurrddencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrddencyCell.swift; sourceTree = "<group>"; };
+		121B8FF1226D40AE003198A5 /* CurrddencyCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrddencyCellController.swift; sourceTree = "<group>"; };
+>>>>>>> master
 		12DEE01122642DC2006279BF /* Assistant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assistant.swift; sourceTree = "<group>"; };
 		12DEE01522644714006279BF /* ToolBoxPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBoxPage.swift; sourceTree = "<group>"; };
 		171C6A3E226878FD000381F5 /* NewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewCell.swift; sourceTree = "<group>"; };
@@ -55,6 +81,12 @@
 		171F9D3122648E520064C5DF /* Mine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mine.swift; sourceTree = "<group>"; };
 		171F9D3322648E740064C5DF /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		172D30C7226974AE00AB08C3 /* Rescue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rescue.swift; sourceTree = "<group>"; };
+		1731C03D226D45730041684A /* CurrencyChoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyChoice.swift; sourceTree = "<group>"; };
+		1731C03E226D45730041684A /* CurrencyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
+		1731C044226D458B0041684A /* TravelInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelInformation.swift; sourceTree = "<group>"; };
+		1731C045226D458B0041684A /* NewUITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUITableView.swift; sourceTree = "<group>"; };
+		1731C049226D45940041684A /* TravelInsurance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelInsurance.swift; sourceTree = "<group>"; };
+		1731C04D226D9A310041684A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		36D088452268690F00C727FC /* CreatJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatJourney.swift; sourceTree = "<group>"; };
 		36D088472268692500C727FC /* ListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPage.swift; sourceTree = "<group>"; };
 		36D088492268693900C727FC /* SetJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetJourney.swift; sourceTree = "<group>"; };
@@ -81,7 +113,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		04CC3B50226D8E8B00F3433C /* CurrencyConverter */ = {
+=======
+
+		121B8F9A22695483003198A5 /* CurrencyConverter */ = {
+>>>>>>> master
 			isa = PBXGroup;
 			children = (
 				04CC3B51226D8E8B00F3433C /* CurrencyConverter.swift */,
@@ -128,10 +165,16 @@
 		12DEE00B22642BF4006279BF /* ToolBox */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				04CC3B61226D8EB800F3433C /* Travel insurance */,
 				04CC3B5C226D8EAB00F3433C /* Travel information */,
 				04CC3B57226D8E9500F3433C /* Stroke weather */,
 				04CC3B50226D8E8B00F3433C /* CurrencyConverter */,
+=======
+				1731C048226D45940041684A /* Travel insurance */,
+				1731C043226D458B0041684A /* Travel information */,
+				1731C03C226D45730041684A /* CurrencyConverter */,
+>>>>>>> master
 				172D30C62269743F00AB08C3 /* Emergency rescue */,
 				7C21EB752264539A00BD46C4 /* Stroke weather */,
 				7C21EB742264534700BD46C4 /* Real_time translation */,
@@ -195,6 +238,32 @@
 			path = "Emergency rescue";
 			sourceTree = "<group>";
 		};
+		1731C03C226D45730041684A /* CurrencyConverter */ = {
+			isa = PBXGroup;
+			children = (
+				1731C03D226D45730041684A /* CurrencyChoice.swift */,
+				1731C03E226D45730041684A /* CurrencyConverter.swift */,
+			);
+			path = CurrencyConverter;
+			sourceTree = "<group>";
+		};
+		1731C043226D458B0041684A /* Travel information */ = {
+			isa = PBXGroup;
+			children = (
+				1731C044226D458B0041684A /* TravelInformation.swift */,
+				1731C045226D458B0041684A /* NewUITableView.swift */,
+			);
+			path = "Travel information";
+			sourceTree = "<group>";
+		};
+		1731C048226D45940041684A /* Travel insurance */ = {
+			isa = PBXGroup;
+			children = (
+				1731C049226D45940041684A /* TravelInsurance.swift */,
+			);
+			path = "Travel insurance";
+			sourceTree = "<group>";
+		};
 		7C21EB742264534700BD46C4 /* Real_time translation */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +283,7 @@
 		92104A18224DE7220042FD2A = {
 			isa = PBXGroup;
 			children = (
+				1731C04D226D9A310041684A /* .gitignore */,
 				92104A23224DE7220042FD2A /* demo */,
 				92104A22224DE7220042FD2A /* Products */,
 			);
@@ -306,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92104A2F224DE7230042FD2A /* LaunchScreen.storyboard in Resources */,
+				1731C04E226D9A310041684A /* .gitignore in Resources */,
 				92104A2C224DE7230042FD2A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,18 +389,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				12DEE01222642DC2006279BF /* Assistant.swift in Sources */,
+<<<<<<< HEAD
 				04CC3B5A226D8E9500F3433C /* FirstWeather.swift in Sources */,
+=======
+				1731C041226D45730041684A /* CurrencyConverter.swift in Sources */,
+>>>>>>> master
 				171C6A4322687939000381F5 /* Register.swift in Sources */,
 				171F9D3422648E740064C5DF /* Login.swift in Sources */,
 				36D088462268690F00C727FC /* CreatJourney.swift in Sources */,
 				172D30C8226974AE00AB08C3 /* Rescue.swift in Sources */,
+<<<<<<< HEAD
 				36D088482268692500C727FC /* ListPage.swift in Sources */,
 				04CC3B54226D8E8B00F3433C /* CurrencyConverter.swift in Sources */,
 				04CC3B63226D8EB800F3433C /* TravelInsurance.swift in Sources */,
+=======
+				1731C04A226D45940041684A /* TravelInsurance.swift in Sources */,
+				36D088482268692500C727FC /* ListPage.swift in Sources */,
+				1731C047226D458C0041684A /* NewUITableView.swift in Sources */,
+>>>>>>> master
 				171C6A4122687916000381F5 /* MyTrip.swift in Sources */,
+				1731C046226D458C0041684A /* TravelInformation.swift in Sources */,
 				92104A27224DE7220042FD2A /* MyViewController.swift in Sources */,
 				36D0884A2268693900C727FC /* SetJourney.swift in Sources */,
+<<<<<<< HEAD
 				04CC3B60226D8EAC00F3433C /* NewUITableView.swift in Sources */,
+=======
+>>>>>>> master
 				12DEE01622644714006279BF /* ToolBoxPage.swift in Sources */,
 				171F9D3222648E530064C5DF /* Mine.swift in Sources */,
 				36D0884C2268694C00C727FC /* TripPage.swift in Sources */,
@@ -338,6 +423,8 @@
 				04CC3B55226D8E8B00F3433C /* CurrddencyCell.swift in Sources */,
 				04CC3B56226D8E8B00F3433C /* CurrddencyCellController.swift in Sources */,
 				92104A25224DE7220042FD2A /* AppDelegate.swift in Sources */,
+
+				1731C040226D45730041684A /* CurrencyChoice.swift in 
 				7C21EB77226455C600BD46C4 /* FirstWeather.swift in Sources */,
 				171C6A3F226878FD000381F5 /* NewTableViewCell.swift in Sources */,
 				92104A3B22545BE70042FD2A /* TabbarViewController.swift in Sources */,
