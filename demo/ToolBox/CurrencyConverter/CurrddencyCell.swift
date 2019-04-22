@@ -23,7 +23,6 @@ class CurrddencyCell: UITableViewCell {
         moneyImv = UIImageView(frame: CGRect(x: 20, y: 25, width: 57, height: 40))
         moneyImv.layer.masksToBounds = true
         
-        
         // 货币名称
         currddencyLabel = UILabel(frame: CGRect(x: 74, y: 20, width: 100, height: 50))
         currddencyLabel.textColor = UIColor.black
