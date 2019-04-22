@@ -17,7 +17,7 @@ class MyTrip: UIViewController,UITableViewDataSource,UITableViewDelegate{
         //获取屏幕
         let screen = UIScreen.main.bounds
         self.view.backgroundColor =  #colorLiteral(red: 0.9763445258, green: 0.976619184, blue: 0.967718184, alpha: 1)
-        let navigationBarHeight: CGFloat = 44//默认高度
+//        let navigationBarHeight: CGFloat = 44//默认高度
         //        let navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: screen.size.width, height: navigationBarHeight))
         //        //设置导航栏标题名字
         //        let navigationItem = UINavigationItem(title:"游记")

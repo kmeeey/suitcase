@@ -21,6 +21,7 @@
 		171C6A4322687939000381F5 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C6A4222687939000381F5 /* Register.swift */; };
 		171F9D3222648E530064C5DF /* Mine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F9D3122648E520064C5DF /* Mine.swift */; };
 		171F9D3422648E740064C5DF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171F9D3322648E740064C5DF /* Login.swift */; };
+		172D30C8226974AE00AB08C3 /* Rescue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172D30C7226974AE00AB08C3 /* Rescue.swift */; };
 		36D088462268690F00C727FC /* CreatJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D088452268690F00C727FC /* CreatJourney.swift */; };
 		36D088482268692500C727FC /* ListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D088472268692500C727FC /* ListPage.swift */; };
 		36D0884A2268693900C727FC /* SetJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D088492268693900C727FC /* SetJourney.swift */; };
@@ -49,6 +50,7 @@
 		171C6A4222687939000381F5 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		171F9D3122648E520064C5DF /* Mine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mine.swift; sourceTree = "<group>"; };
 		171F9D3322648E740064C5DF /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		172D30C7226974AE00AB08C3 /* Rescue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rescue.swift; sourceTree = "<group>"; };
 		36D088452268690F00C727FC /* CreatJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatJourney.swift; sourceTree = "<group>"; };
 		36D088472268692500C727FC /* ListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPage.swift; sourceTree = "<group>"; };
 		36D088492268693900C727FC /* SetJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetJourney.swift; sourceTree = "<group>"; };
@@ -113,9 +115,10 @@
 		12DEE00B22642BF4006279BF /* ToolBox */ = {
 			isa = PBXGroup;
 			children = (
-				121B8FAC22699B42003198A5 /* Travel information */,
-				121B8FAA22699B42003198A5 /* Travel insurance */,
-				121B8F9A22695483003198A5 /* CurrencyConverter */,
+				172D30C62269743F00AB08C3 /* Emergency rescue */,
+				0779DC7122696C97000B2726 /* Travel information */,
+				0779DC6722696433000B2726 /* Travel insurance */,
+
 				7C21EB752264539A00BD46C4 /* Stroke weather */,
 				7C21EB742264534700BD46C4 /* Real_time translation */,
 				12DEE01522644714006279BF /* ToolBoxPage.swift */,
@@ -168,6 +171,14 @@
 			children = (
 			);
 			path = Net;
+			sourceTree = "<group>";
+		};
+		172D30C62269743F00AB08C3 /* Emergency rescue */ = {
+			isa = PBXGroup;
+			children = (
+				172D30C7226974AE00AB08C3 /* Rescue.swift */,
+			);
+			path = "Emergency rescue";
 			sourceTree = "<group>";
 		};
 		7C21EB742264534700BD46C4 /* Real_time translation */ = {
@@ -298,6 +309,9 @@
 				171C6A4322687939000381F5 /* Register.swift in Sources */,
 				171F9D3422648E740064C5DF /* Login.swift in Sources */,
 				36D088462268690F00C727FC /* CreatJourney.swift in Sources */,
+				0779DC7522696D0C000B2726 /* NewUITableView.swift in Sources */,
+				172D30C8226974AE00AB08C3 /* Rescue.swift in Sources */,
+
 				36D088482268692500C727FC /* ListPage.swift in Sources */,
 				171C6A4122687916000381F5 /* MyTrip.swift in Sources */,
 				92104A27224DE7220042FD2A /* MyViewController.swift in Sources */,
