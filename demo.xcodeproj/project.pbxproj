@@ -21,6 +21,7 @@
 		1731C046226D458C0041684A /* TravelInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731C044226D458B0041684A /* TravelInformation.swift */; };
 		1731C047226D458C0041684A /* NewUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731C045226D458B0041684A /* NewUITableView.swift */; };
 		1731C04A226D45940041684A /* TravelInsurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1731C049226D45940041684A /* TravelInsurance.swift */; };
+		1731C04E226D9A310041684A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1731C04D226D9A310041684A /* .gitignore */; };
 		36D088462268690F00C727FC /* CreatJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D088452268690F00C727FC /* CreatJourney.swift */; };
 		36D088482268692500C727FC /* ListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D088472268692500C727FC /* ListPage.swift */; };
 		36D0884A2268693900C727FC /* SetJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D088492268693900C727FC /* SetJourney.swift */; };
@@ -49,6 +50,7 @@
 		1731C044226D458B0041684A /* TravelInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelInformation.swift; sourceTree = "<group>"; };
 		1731C045226D458B0041684A /* NewUITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUITableView.swift; sourceTree = "<group>"; };
 		1731C049226D45940041684A /* TravelInsurance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelInsurance.swift; sourceTree = "<group>"; };
+		1731C04D226D9A310041684A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		36D088452268690F00C727FC /* CreatJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatJourney.swift; sourceTree = "<group>"; };
 		36D088472268692500C727FC /* ListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPage.swift; sourceTree = "<group>"; };
 		36D088492268693900C727FC /* SetJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetJourney.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		92104A18224DE7220042FD2A = {
 			isa = PBXGroup;
 			children = (
+				1731C04D226D9A310041684A /* .gitignore */,
 				92104A23224DE7220042FD2A /* demo */,
 				92104A22224DE7220042FD2A /* Products */,
 			);
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92104A2F224DE7230042FD2A /* LaunchScreen.storyboard in Resources */,
+				1731C04E226D9A310041684A /* .gitignore in Resources */,
 				92104A2C224DE7230042FD2A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
