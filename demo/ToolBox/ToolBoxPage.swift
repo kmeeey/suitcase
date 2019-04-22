@@ -29,11 +29,11 @@ class ToolBoxPage: UIViewController ,UICollectionViewDataSource,UICollectionView
         
         //imageview
         imageViewbg = UIImageView(image: UIImage(named: "main_page_top_day_bg"))
-        imageViewbg!.frame = CGRect(x: 0, y: 0, width:width, height:height/2 )
+        imageViewbg!.frame = CGRect(x: 0, y: 0, width:width, height:height/3 )
         self.view.addSubview(imageViewbg!)
         
         imageViewmain = UIImageView(image: UIImage(named: "main_page_top_set"))
-        imageViewmain!.frame = CGRect(x: 0, y: 0, width:width, height:height/2 )
+        imageViewmain!.frame = CGRect(x: 0, y: 60, width:width, height:height/3 )
         imageViewmain?.contentMode = UIImageView.ContentMode.scaleAspectFit
         imageViewmain?.isUserInteractionEnabled = true
         
@@ -45,7 +45,7 @@ class ToolBoxPage: UIViewController ,UICollectionViewDataSource,UICollectionView
   
         
         let layout:UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        self.myCollectionView = UICollectionView(frame: CGRect.init(x: 0, y: height/2, width: width, height: height-height/2-84), collectionViewLayout: layout)
+        self.myCollectionView = UICollectionView(frame: CGRect.init(x: 0, y: height/3, width: width, height: height-height/3-84), collectionViewLayout: layout)
         layout.itemSize = CGSize(width: (width-3)/3, height: width/3)
         //设置cell与cell之间的列距
         layout.minimumInteritemSpacing = 1;

@@ -23,11 +23,12 @@ class CurrddencyCell: UITableViewCell {
         moneyImv = UIImageView(frame: CGRect(x: 20, y: 25, width: 57, height: 40))
         moneyImv.layer.masksToBounds = true
         
+        
         // 货币名称
-        currddencyLabel = UILabel(frame: CGRect(x: 74, y: 20, width: 100, height: 50))
+        currddencyLabel = UILabel(frame: CGRect(x: 100, y: 20, width: width, height: 50))
         currddencyLabel.textColor = UIColor.black
         currddencyLabel.font = UIFont.boldSystemFont(ofSize: 21)
-        currddencyLabel.textAlignment = .center
+        currddencyLabel.textAlignment = .left
         
         // 货币缩写
         currddencyabbreviationLabel = UILabel(frame: CGRect(x: width-60, y: 25, width: 50, height: 40))
