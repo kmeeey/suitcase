@@ -108,7 +108,7 @@ class Login: UIViewController {
         print("我还没写")
     }
     @objc func Register(){
-        print("这个我也没写")
+        
     }
     @objc func back(_ sender: AnyObject){
         self.dismiss(animated: true, completion: nil)
