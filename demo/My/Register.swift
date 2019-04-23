@@ -21,7 +21,7 @@ class Register: UIViewController {
         let navigationBarHeight: CGFloat = 44//默认高度
         let navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 30, width: screen.size.width, height: navigationBarHeight))
         //设置按钮
-        let leftbtn =  UIBarButtonItem(title:"返回", style:UIBarButtonItem.Style.plain, target: self, action:nil)
+        let leftbtn =  UIBarButtonItem(title:"返回", style:UIBarButtonItem.Style.plain, target: self, action:#selector(back))
         let rightbtn = UIBarButtonItem(title: "登录", style: .plain, target: self, action: nil)
         //按钮文字颜色
         leftbtn.tintColor = UIColor.red
@@ -36,15 +36,15 @@ class Register: UIViewController {
         self.view.addSubview(navigationBar)
         
         let icon1 = UIImageView(frame: CGRect.init(x: 50, y: 0, width: 50, height: 50))
-        let image1 = UIImage(named: "phone 13-31-08-190")
+        let image1 = UIImage(named: "UC_PhoneNumber_Icon_29x29_@2x")
         icon1.image = image1
         
         let icon2 = UIImageView(frame: CGRect.init(x: 50, y: 0, width: 50, height: 50))
-        let image2 = UIImage(named: "psw-icon 13-32-25-238")
+        let image2 = UIImage(named: "UC_Register_Icon_29x29_@2x")
         icon2.image = image2
         
         let icon3 = UIImageView(frame: CGRect.init(x: 50, y: 0, width: 50, height: 50))
-        let image3 =  UIImage(named: "login_page_fragment_register_password_icon")
+        let image3 =  UIImage(named: "UC_PassWord_Icon_29x29_@2x")
         icon3.image = image3
         
         let button = UIButton(frame:CGRect(x:0, y:0, width:100, height:40))
@@ -111,6 +111,8 @@ class Register: UIViewController {
         self.view.addSubview(runle2)
         
     }
-    
+    @objc func back() {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }
