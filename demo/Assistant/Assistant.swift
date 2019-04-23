@@ -20,6 +20,12 @@ class Assistant: UIViewController {
         self.navigationItem.title = "行程助手"
         self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
+        //隐藏底部tabbar
+        self.tabBarController?.hidesBottomBarWhenPushed = true;
+        
+        self.tabBarController?.tabBar.isHidden = true;
+        
+
         //设置左上角导航按钮的样式和功能
         let leftItem = UIBarButtonItem(title: "行程", style: .plain, target: self, action: #selector(leftPage))
         leftItem.tintColor = UIColor.gray
@@ -32,7 +38,7 @@ class Assistant: UIViewController {
         
         //图片
         let image = UIImageView(frame: CGRect(x: self.view.frame.maxX / 4, y: self.view.frame.maxY / 7, width: 200, height: 220))
-        let icon = UIImage(named: "account_assistant_nodata")
+        let icon = UIImage(named: "account_assistant_nodata-1")
         image.image = icon
         self.view.addSubview(image)
         
