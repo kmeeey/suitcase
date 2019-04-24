@@ -21,6 +21,9 @@ class ListPage : UIViewController, UITableViewDataSource, UITableViewDelegate{
         let screen = UIScreen.main.bounds
         
         
+        self.tabBarController?.tabBar.isHidden = true;
+        
+        
         
         //加载试图后进行任何其他设置
         self.navigationItem.title = "行程助手"
@@ -140,9 +143,14 @@ class ListPage : UIViewController, UITableViewDataSource, UITableViewDelegate{
     //按钮的点击事件
     @objc func leftPage() {
         //初始化第二个视图控制器对象
-        let viewController1 = Assistant()
-        //将第二个视图控制器压入导航视图控制器，实现页面跳转
-        self.navigationController?.pushViewController(viewController1,animated: true)
+//        let viewController1 = Assistant()
+//        //将第二个视图控制器压入导航视图控制器，实现页面跳转
+//        self.tabBarController?.hidesBottomBarWhenPushed = false;
+//        self.tabBarController?.tabBar.isHidden = false;
+        self.tabBarController?.tabBar.isHidden = false;
+        self.navigationController?.popViewController(animated: true)
+//        self.present(TabbarViewController(), animated: true)
+
     }
     
     @objc func rightPage() {

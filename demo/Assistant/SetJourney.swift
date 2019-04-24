@@ -17,7 +17,7 @@ class SetJourney : UIViewController {
     var label_shezhichufadi : UILabel?
     var label_chufachengshi : UILabel?
     var img_weizhi : UIImageView?
-    var  label_qingxuanzhe : UILabel?
+    var  label_qingxuanze : UILabel?
     var view1 : UIView?
     
    
@@ -25,6 +25,12 @@ class SetJourney : UIViewController {
     var img_weizhi1 : UIImageView?
     var  label_qishishijian : UILabel?
     var view2 : UIView?
+    
+//    var label_shezhimudidi : UILabel?
+//    var label_mudidi1 : UILabel?
+//    var img_weizhi1 : UIImageView?
+//    var label_qingxuanze : UILabel?
+//    var view2 : ui ?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,15 +111,15 @@ class SetJourney : UIViewController {
         view.addSubview(label_chufachengshi!)
         
         //设置一个label
-        label_qingxuanzhe = UILabel()
+        label_qingxuanze = UILabel()
         //设置位置
-        label_qingxuanzhe?.frame = CGRect(x: self.view.frame.maxX - 80, y: 90, width: 70, height: 20)
+        label_qingxuanze?.frame = CGRect(x: self.view.frame.maxX - 80, y: 90, width: 70, height: 20)
         //设置提示文字
-        label_qingxuanzhe?.text = "请选择 >"
+        label_qingxuanze?.text = "请选择 >"
         //设置提示文字颜色
-        label_qingxuanzhe?.textColor  = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        label_qingxuanze?.textColor  = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         //添加到视图
-        view.addSubview(label_qingxuanzhe!)
+        view.addSubview(label_qingxuanze!)
         
         
         //设置一个view
@@ -174,17 +180,13 @@ class SetJourney : UIViewController {
     
     //按钮的点击事件
     @objc func leftPage() {
-        //初始化第二个视图控制器对象
-        let trippage = ListPage()
         //将第二个视图控制器压入导航视图控制器，实现页面跳转
-        self.navigationController?.pushViewController(trippage,animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc func rightPage() {
-        //初始化第二个视图控制器对象
-        let listpage = ListPage()  //列表
         //将第二个视图控制器压入导航视图控制器，实现页面跳转
-        self.navigationController?.pushViewController(listpage,animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
 
     
