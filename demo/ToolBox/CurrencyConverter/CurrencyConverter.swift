@@ -18,7 +18,7 @@ class CurrencyConverter: UIViewController {
         let screen = UIScreen.main.bounds
         self.view.backgroundColor = #colorLiteral(red: 0.9068111181, green: 0.9017875791, blue: 0.906077683, alpha: 1)
         
-        let navigationBarHeight:CGFloat = 30
+        let navigationBarHeight:CGFloat = 44
         let navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 44, width: screen.size.width, height: navigationBarHeight))
         navigationBar.backgroundColor = UIColor.white
         
@@ -33,20 +33,22 @@ class CurrencyConverter: UIViewController {
         navigationBar.items = [navigationItem]
         self.view.addSubview(navigationBar)
         
-        //1
+        //view1
         var view1 = UIView()
         var imageViewbg : UIImageView?
+        var moneyImv : UIImageView?
         
-
+        
         view1 = UIView.init(frame: CGRect.init(x: 0, y: 88, width: screen.width, height: 83))
         imageViewbg = UIImageView(image: UIImage(named: "exchangeHeadBG_375x83_"))
         imageViewbg!.frame = CGRect(x: 0, y: 88, width:screen.width, height:83 )
+        
+        moneyImv = UIImageView()
+        
+        
         self.view.addSubview(imageViewbg!)
         
-        let bt3 = UIButton.init(frame: CGRect.init(x: 0, y: 88, width: screen.width/2, height: 83))
-        bt3.setImage(UIImage(named: "CNY_Icon_57x40_"), for: .normal)
-        bt3.addTarget(self, action: #selector(currencyconverter), for: .touchDown)
-        self.view.addSubview(bt3)
+        
  
 
     }

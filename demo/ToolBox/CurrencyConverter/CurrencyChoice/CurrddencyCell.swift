@@ -16,9 +16,13 @@ class CurrddencyCell: UITableViewCell {
     var currddencyabbreviationLabel:UILabel!     //
     var moneyImv:UIImageView!    // 
     
+    
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+
+
         //国家图标
         moneyImv = UIImageView(frame: CGRect(x: 20, y: 25, width: 57, height: 40))
         moneyImv.layer.masksToBounds = true
