@@ -20,6 +20,12 @@ class Assistant: UIViewController {
         self.navigationItem.title = "行程助手"
         self.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
+        //隐藏底部tabbar
+//        self.tabBarController?.hidesBottomBarWhenPushed = false;
+//
+//        self.tabBarController?.tabBar.isHidden = false;
+        
+
         //设置左上角导航按钮的样式和功能
         let leftItem = UIBarButtonItem(title: "行程", style: .plain, target: self, action: #selector(leftPage))
         leftItem.tintColor = UIColor.gray
@@ -32,7 +38,7 @@ class Assistant: UIViewController {
         
         //图片
         let image = UIImageView(frame: CGRect(x: self.view.frame.maxX / 4, y: self.view.frame.maxY / 7, width: 200, height: 220))
-        let icon = UIImage(named: "account_assistant_nodata")
+        let icon = UIImage(named: "account_assistant_nodata-1")
         image.image = icon
         self.view.addSubview(image)
         
@@ -65,10 +71,17 @@ class Assistant: UIViewController {
     
     //按钮的点击事件
     @objc func leftPage() {
+        
+        
         //初始化第二个视图控制器对象
         let trippage = TripPage()  //行程
         //将第二个视图控制器压入导航视图控制器，实现页面跳转
-        self.navigationController?.pushViewController(trippage,animated: true)
+        //self.navigationController?.pushViewController(trippage,animated: true)
+        
+        self.present(trippage, animated: true, completion: nil)
+
+        
+        
     }
     
     
@@ -77,7 +90,9 @@ class Assistant: UIViewController {
         //初始化第二个视图控制器对象
         let listpage = ListPage()  //列表
         //将第二个视图控制器压入导航视图控制器，实现页面跳转
+//        self.tabBarController?.hidesBottomBarWhenPushed = true;
         self.navigationController?.pushViewController(listpage,animated: true)
+//        self.present(listpage, animated: true, completion: nil)
     }
     
     

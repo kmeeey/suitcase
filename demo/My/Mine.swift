@@ -53,6 +53,7 @@ class Mine : UIViewController{
         let lineDash = UIImageView(frame: CGRect(x: btn_login.frame.origin.x + 5, y: btn_login.frame.origin.y + btn_login.frame.height, width: 40, height: 1))
         lineDash.image = UIImage.init(named: "login_page_fragment_center_line")
         image_view.addSubview(lineDash)
+        
         //注册
         let btn_reg = UIButton(frame: CGRect(x: (self.view.frame.width - 50)/2 + 40 , y: title.frame.origin.y + title.frame.height + 10, width: 50, height: 25))
         btn_reg.titleLabel?.font = UIFont.systemFont(ofSize: 15)
@@ -142,29 +143,41 @@ class Mine : UIViewController{
         
         
         
+        
+        
         //保险订单
         let btn_insurance = UIButton(frame: CGRect(x: 0, y: view.frame.origin.y + view.frame.height + 20, width: self.view.frame.width, height: 50))
+        
         btn_insurance.backgroundColor = .white
         
         self.view.addSubview(btn_insurance)
         
+        
+        
         let insurance = UILabel(frame: CGRect(x: 10, y: (btn_insurance.frame.height - 30)/2, width: 80, height: 30))
+        
         insurance.text = "保险订单"
         insurance.font = UIFont.systemFont(ofSize: 16)
         btn_insurance.addSubview(insurance)
         
+        
+        
         let img1 = UIImageView(frame: CGRect(x:btn_insurance.frame.width - 25, y:(btn_insurance.frame.height - 25)/2, width: 20, height:30))
         img1.image = UIImage.init(named: "insurance_webview_go_foward_default")
         btn_insurance.addSubview(img1)
+        
+        
         //记账本+行程账单
         let view2 = UIView(frame: CGRect(x: 0, y: btn_insurance.frame.origin.y + btn_insurance.frame.height + 20, width: self.view.frame.width, height: 50))
         view2.backgroundColor = .white
         self.view.addSubview(view2)
         
+        
         let note = UILabel(frame: CGRect(x: 10, y: (view2.frame.height - 30)/2, width: 140, height: 30))
         note.text = "记账本+行程账单"
         note.font = UIFont.systemFont(ofSize: 16)
         view2.addSubview(note)
+        
         
         let sync = UILabel(frame: CGRect(x: note.frame.origin.x + note.frame.width + 5, y: (view2.frame.height - 30)/2, width: 60, height: 30))
         sync.text = "已同步"
@@ -176,6 +189,7 @@ class Mine : UIViewController{
         sync.layer.cornerRadius = 5
         sync.layer.borderWidth = 2
         view2.addSubview(sync)
+        
         
         let btn_sync = UIButton(frame: CGRect(x:view2.frame.width - 110, y:(view2.frame.height - 40)/2, width: 90, height:40))
         btn_sync.backgroundColor = #colorLiteral(red: 0.4675745964, green: 0.7651544213, blue: 0.6870430112, alpha: 1)

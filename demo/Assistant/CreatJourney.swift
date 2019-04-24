@@ -13,7 +13,7 @@ class CreatJourney : UIViewController {
         super.viewDidLoad()
         
         
-        //定义一个出发地输入框
-        
+        self.title = "行程"
+        self.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     }
 }
