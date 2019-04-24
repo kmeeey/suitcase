@@ -78,6 +78,7 @@ class ToolBoxPage: UIViewController ,UICollectionViewDataSource,UICollectionView
         
     }
     @objc func tapGestureRecognizer(sender:UITapGestureRecognizer) {
+        print("点击了图片")
         let setstroke = SetStroke()
         self.present(setstroke, animated: true, completion: nil)
     }

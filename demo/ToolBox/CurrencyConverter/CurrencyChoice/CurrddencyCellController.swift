@@ -21,6 +21,7 @@ class CurrddencyCellController: UIViewController,UITableViewDataSource,UITableVi
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.9763886333, green: 0.9765250087, blue: 0.9763454795, alpha: 1)
         
+        
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.backgroundColor = UIColor.white
         //1. 创建NavigationBar

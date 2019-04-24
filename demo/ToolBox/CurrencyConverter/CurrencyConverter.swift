@@ -34,36 +34,61 @@ class CurrencyConverter: UIViewController {
         self.view.addSubview(navigationBar)
         
         //view1
-        var view1 = UIView()
+        var view1 : UIView?
         var imageViewbg : UIImageView?
         var moneyImv : UIImageView?
-        
-        
-        view1 = UIView.init(frame: CGRect.init(x: 0, y: 88, width: screen.width, height: 83))
-        imageViewbg = UIImageView(image: UIImage(named: "exchangeHeadBG_375x83_"))
-        imageViewbg!.frame = CGRect(x: 0, y: 88, width:screen.width, height:83 )
-        
-        moneyImv = UIImageView()
-        
-        
-        self.view.addSubview(imageViewbg!)
-        
-        
+        var currddencyabbreviationLabel : UILabel?
+        var currddencyLabel : UILabel?
+        var exchange_rate : UILabel?
  
+        view1 = UIView.init(frame: CGRect.init(x: 0, y: 88, width: screen.width, height: 83))
+        
+        
+        imageViewbg = UIImageView(image: UIImage(named: "exchangeHeadBG_375x83_"))
+        imageViewbg!.frame = CGRect(x: 0, y: 0, width:screen.width, height:83 )
+        view1?.addSubview(imageViewbg!)
+        
+        moneyImv = UIImageView(image: UIImage(named: "CNY_Icon_57x40_"))
+        moneyImv!.frame = CGRect(x: -28, y: 20, width:screen.width/2, height:40 )
+        moneyImv?.contentMode = UIImageView.ContentMode.scaleAspectFit
+        moneyImv?.isUserInteractionEnabled = true
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action:#selector(ToolBoxPage.tapGestureRecognizer(sender:)))
+        moneyImv?.addGestureRecognizer(tapGestureRecognizer)
+        view1?.addSubview(moneyImv!)
+        
+        
+        currddencyabbreviationLabel = UILabel(frame: CGRect.init(x: 100, y: 20, width: screen.width, height: 10))
+        currddencyabbreviationLabel?.text = "CNY"
+        currddencyabbreviationLabel?.textColor = .white
+        currddencyabbreviationLabel?.sizeToFit()
+        view1?.addSubview(currddencyabbreviationLabel!)
+        
+        currddencyLabel = UILabel(frame: CGRect.init(x: 100, y: 35, width: screen.width, height: 30))
+        currddencyLabel?.text = "人民币"
+        currddencyLabel?.font = .boldSystemFont(ofSize: 11)
+        currddencyLabel?.textColor = .white
+        view1?.addSubview(currddencyLabel!)
+        
+        exchange_rate = UILabel(frame: CGRect.init(x: screen.width/2, y: 20, width: screen.width/2, height: 57))
+        exchange_rate?.text = "0.00"
+        exchange_rate?.font = .systemFont(ofSize: 60)
+        exchange_rate?.textAlignment = .right
+        exchange_rate?.textColor = .white
+        view1?.addSubview(exchange_rate!)
+        
+        
 
+        self.view.addSubview(view1!)
+        
     }
-    
-    
-
+    @objc func tapGestureRecognizer(sender:UITapGestureRecognizer) {
+        print("点击了国旗")
+        let currddencycellcontroller = CurrddencyCellController()
+        self.present(currddencycellcontroller, animated: true, completion: nil)
+    }
     @objc func back(_ sender: AnyObject){
-        
         dismiss(animated: true, completion: nil)
-        
-    }
-    @objc func currencyconverter(_ sender: AnyObject){
-        
-        let currencychoice = CurrddencyCellController()
-        self.present(currencychoice, animated: true, completion: nil)
         
     }
 
