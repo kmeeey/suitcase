@@ -9,7 +9,14 @@
 
 import UIKit
 
+protocol CurrddencyCellControllerDelegate{
+    
+    func passOnInformation(VC:CurrddencyCellController,value:String)
+}
+
 class CurrddencyCellController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    
+    var delegate:CurrddencyCellControllerDelegate?
     
 //    var dataSource = [[String:String]()]
     
@@ -101,6 +108,8 @@ class CurrddencyCellController: UIViewController,UITableViewDataSource,UITableVi
     // 选中cell后执行此方法
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
     @objc func back(_ sender: AnyObject){

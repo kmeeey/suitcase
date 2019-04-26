@@ -8,8 +8,14 @@
 
 import UIKit
 
-class CurrencyConverter: UIViewController {
-    
+class CurrencyConverter: UIViewController ,CurrddencyCellControllerDelegate{
+    var view1 : UIView?
+    var view2 : UIView?
+    var imageViewbg : UIImageView?
+    var moneyImv : UIImageView?
+    var currddencyabbreviationLabel : UILabel?
+    var currddencyLabel : UILabel?
+    var exchange_rate : UILabel?
     
 
     override func viewDidLoad() {
@@ -34,16 +40,9 @@ class CurrencyConverter: UIViewController {
         self.view.addSubview(navigationBar)
         
         //view1
-        var view1 : UIView?
-        var imageViewbg : UIImageView?
-        var moneyImv : UIImageView?
-        var currddencyabbreviationLabel : UILabel?
-        var currddencyLabel : UILabel?
-        var exchange_rate : UILabel?
- 
+
         view1 = UIView.init(frame: CGRect.init(x: 0, y: 88, width: screen.width, height: 83))
-        
-        
+
         imageViewbg = UIImageView(image: UIImage(named: "exchangeHeadBG_375x83_"))
         imageViewbg!.frame = CGRect(x: 0, y: 0, width:screen.width, height:83 )
         view1?.addSubview(imageViewbg!)
@@ -76,16 +75,26 @@ class CurrencyConverter: UIViewController {
         exchange_rate?.textAlignment = .right
         exchange_rate?.textColor = .white
         view1?.addSubview(exchange_rate!)
-        
-        
 
         self.view.addSubview(view1!)
+        
+        
+        view2 = UIView.init(frame: CGRect.init(x: 0, y: 170, width: screen.width, height: 300))
+        view2?.backgroundColor = UIColor.white
+        
+        self.view.addSubview(view2!)
         
     }
     @objc func tapGestureRecognizer(sender:UITapGestureRecognizer) {
         print("点击了国旗")
         let currddencycellcontroller = CurrddencyCellController()
+        currddencycellcontroller.delegate = self
         self.present(currddencycellcontroller, animated: true, completion: nil)
+    }
+    func passOnInformation(VC: CurrddencyCellController, value: String) {
+        //接收数据
+//        self.moneyImv = value
+        
     }
     @objc func back(_ sender: AnyObject){
         dismiss(animated: true, completion: nil)
