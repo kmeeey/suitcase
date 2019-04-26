@@ -117,7 +117,8 @@ class ToolBoxPage: UIViewController ,UICollectionViewDataSource,UICollectionView
             self.present(translate, animated: true, completion: nil)
             break
         case 2 :
-            
+            let setspots = SetSpots()
+            self.present(setspots, animated: true, completion: nil)
             break
             
         case 4 :
